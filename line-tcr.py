@@ -12,34 +12,22 @@ import time,random,sys,json,codecs,threading,glob,re
 cl = LINETCR.LINE()
 cl.login(qr=True)
 
-ki = LINETCR.LINE()
-ki.login(qr=True)
-
-kk = LINETCR.LINE()
-kk.login(qr=True)
-
 kc = LINETCR.LINE()
 kc.login(qr=True)
-
-ks = LINETCR.LINE()
-ks.login(qr=True)
-
-ka = LINETCR.LINE()
-ka.login(qr=True)
-
-kb = LINETCR.LINE()
-kb.login(qr=True)
 
 ko = LINETCR.LINE()
 ko.login(qr=True)
 
-ke = LINETCR.LINE()
-ke.login(qr=True)
-
 ku = LINETCR.LINE()
 ku.login(qr=True)
 
-cl
+kk = ki = cl
+
+ka = ks = kc
+
+kb = ko
+
+ke = ku
 
 print "login success"
 reload(sys)
@@ -103,7 +91,7 @@ Gmid = ko.getProfile().mid
 Hmid = ke.getProfile().mid
 Imid = ku.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u33d60593ad472ed11e7907fb1daee6ae"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid]
 admin=["u33d60593ad472ed11e7907fb1daee6ae"]
 wait = {
     'contact':False,
@@ -112,24 +100,15 @@ wait = {
     'leaveRoom':True,
     'timeline':False,
     'autoAdd':False,
-    'message':"Thanks for add me",
+    'message':"cie ngeadd",
     "lang":"JP",
-    "comment":"Thanks for add me",
+    "comment":"cie ngeadd",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
     "cName":" ",
-    "cName2":"[R.A]_SX2 ",
-    "cName3":"[R.A]_SX3 ",
-    "cName4":"[R.A]_SX4 ",
-    "cName5":"[R.A]_SX5 ",
-    "cName6":"[R.A]_SX6 ",
-    "cName7":"[R.A]_SX7 ",
-    "cName8":"[R.A]_SX8 ",
-    "cName9":"[R.A]_SX9 ",
-    "cName10":"[R.A]_SX10 ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -1247,7 +1226,7 @@ def bot(op):
                 kc.sendText(msg.to,Cmid)
             elif msg.text in ["Wkwkwk","Wkwk","Wk","wkwkwk","wkwk","wk"]:
                 msg.contentType = 7
-                msg.text = None
+                msg.text = "Jones Ketawa"
                 msg.contentMetadata = {
                                      "STKID": "100",
                                      "STKPKGID": "1",
@@ -1282,7 +1261,7 @@ def bot(op):
                                      "STKVER": "100" }
                 ki.sendMessage(msg)
                 kk.sendMessage(msg)
-            elif msg.text in ["Hadeuh"]:
+            elif msg.text in ["aduh"]:
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
@@ -1293,7 +1272,7 @@ def bot(op):
                 kk.sendMessage(msg)
             elif msg.text in ["Please"]:
                 msg.contentType = 7
-                msg.text = None
+                msg.text = "Bantuin pls"
                 msg.contentMetadata = {
                                      "STKID": "4",
                                      "STKPKGID": "1",
@@ -1328,7 +1307,7 @@ def bot(op):
                 ki.sendMessage(msg)
             elif msg.text in ["Welcome"]:
                 msg.contentType = 7
-                msg.text = None
+                msg.text = "Selamat Datang Di jones room"
                 msg.contentMetadata = {
                                      "STKID": "247",
                                      "STKPKGID": "3",
@@ -1887,21 +1866,9 @@ def bot(op):
                         cl.updateGroup(G)
                         invsend = 0
                         Ticket = cl.reissueGroupTicket(msg.to)
-                        ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        kk.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
                         kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
-                        ks.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ka.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        kb.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
                         ko.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ke.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
                         ku.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
@@ -1971,14 +1938,8 @@ def bot(op):
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
                         kc.leaveGroup(msg.to)
-                        ks.leaveGroup(msg.to)
-                        ka.leaveGroup(msg.to)
-                        kb.leaveGroup(msg.to)
                         ko.leaveGroup(msg.to)
-                        ke.leaveGroup(msg.to)
                         ku.leaveGroup(msg.to)
                     except:
                         pass
