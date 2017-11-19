@@ -46,7 +46,7 @@ helpMessage =""" [R.A] BOT Menu V.3  􀔃􀄆red check mark􏿿
 [Respon]   Cek Respon Bot
 [Speedbot] Cek Kecepatan Bot
 [Up]       Fungsi Spam Chat
-[Tagall]   Mention Semua User
+[Tagall,kuchiyose no jutsu]   Mention Semua User
 [Banlist]  Cek List Akun Banned
 [Gn namagroup] Ganti Nama Group
 [Cancel] Cancel User Masuk Group
@@ -1991,7 +1991,7 @@ def bot(op):
     #-------------Fungsi Leave Group Finish---------------#
     
     #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["kiwkiw","Tagall"]:
+            elif msg.text in ["kiwkiw","Tagall","kuchiyose no jutsu","summon all member"]:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
 
