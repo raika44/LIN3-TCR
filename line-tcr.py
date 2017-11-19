@@ -91,8 +91,8 @@ Gmid = ko.getProfile().mid
 Hmid = ke.getProfile().mid
 Imid = ku.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid]
-admin=["u33d60593ad472ed11e7907fb1daee6ae"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
+admin=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -2042,11 +2042,11 @@ def bot(op):
                             pass
          #----------------Fungsi Banned Kick Target Finish----------------------#                
 
-            elif "Greet" in msg.text:
+            elif "cleansemua" in msg.text:
               if msg.from_ in Bots:
                 if msg.toType == 2:
                     print "ok"
-                    _name = msg.text.replace("Greet","")
+                    _name = msg.text.replace("cleansemua","")
                     gs = ki.getGroup(msg.to)
                     gs = kk.getGroup(msg.to)
                     gs = kc.getGroup(msg.to)
@@ -2148,7 +2148,7 @@ def bot(op):
                                 wait["blacklist"][target] = True
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                cl.sendText(msg.to,"Akun telah sukses di banned")
+                                cl.sendText(msg.to,"Akun begini mah banned aja")
                             except:
                                 ki.sendText(msg.to,"Error")
             #----------------Fungsi Banned User Target Finish-----------------------# 
@@ -2233,24 +2233,24 @@ def bot(op):
 
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hinata pekok"]:
-                ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["say salam jones"]:
+                ki.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
             elif msg.text in ["Cv say didik pekok"]:
                 ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["say bobo ah","Bobo dulu ah"]:
+                ki.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
             elif msg.text in ["Cv say chomel pekok"]:
                 ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
             elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
+                ki.sendText(msg.to,"Selamat datang di jones Family Room")
                 kk.sendText(msg.to,"Jangan nakal ok!")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
@@ -2342,10 +2342,10 @@ def bot(op):
                         ki.kickoutFromGroup(msg.to,[jj])
                         kk.kickoutFromGroup(msg.to,[jj])
                         kc.kickoutFromGroup(msg.to,[jj])
-                    cl.sendText(msg.to,"Blacklist emang pantas tuk di usir")
-                    ki.sendText(msg.to,"Blacklist emang pantas tuk di usir")
-                    kk.sendText(msg.to,"Blacklist emang pantas tuk di usir")
-                    kc.sendText(msg.to,"Blacklist emang pantas tuk di usir")
+                    cl.sendText(msg.to,"Blacklist gw kik aja")
+                    ko.sendText(msg.to,"kok?")
+                    ku.sendText(msg.to,"knp?")
+                    kc.sendText(msg.to,"parah")
             elif msg.text in ["Clear"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
