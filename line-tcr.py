@@ -5,18 +5,22 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
+#kk = LINETCR.LINE()
+#kk.login(qr=True)
+#kk.loginResult()
+
 
 cl = LINETCR.LINE()
-cl.login(token="Jgcj7X8sWFdjCMhUD7hHM+IRqkvyn0A8smalTkglS44KVv0CZl7Z7KYJYm9EUP8vAC7UAEM7Zo13B1NpOcOjAp3sQ9duAVmp4t7TS1czR1pInb76t7zJ6Zj9odaXzDQZILOm5HAh2ISR3fetTjyQrx5kw1kGXNk9k3kBrBh2O6cp9+5SVc3xEqCmKIicgXnlrmnAQZJHMjyKHnLIKjnaFEBj592YYAOco5cnL3HkBu7ME1xnpTZMlOP0c6vSRy2lrgUyB+qt+vzS+npN4UqXy7vW1lpZGM6t7ZQYBG8GpdWhrxPogRbCtuPLNt0a96kCtjhvqmI+KVEKCyZiCvF6vYmAsKo/6BNy55EksA3S4ZY=")
+cl.login(qr=true)
 
 kc = LINETCR.LINE()
-kc.login(token="S4FFw5lXwyje1p+Wzo/pYeF8hYTW4lj7F+loKySsn+kEVgkyvRG1jHH/Chrgelz/OzZmpHWA+Mgl8SHFrO8I++pzGlO4wVLfPTDcCtFqA0ZxLzPJnNlefXCiLPVse9OIL98at4d6N2mFIP4Uup/1WkRhSBKPm4Ivd2INgD845uxClqOPWBOujhuSTSRWiDB0wvoEEA+FaGI65Ib7drZn2ajBrHkw7HuWj9cgerJVU+7wSoUxhNdR+Bq8JFoWsniirgUyB+qt+vzS+npN4UqXy7vW1lpZGM6t7ZQYBG8GpdUiCDRvaVVlLnkrVh3KysY/zZBkBTD/m9pRbX1/WlYeXSQ/iPwlkB/FEBgvCiM34j0=")
+kc.login(qr=true)
 
 ko = LINETCR.LINE()
-ko.login(token="XjBwfTOvgBEPBNdMOFw+SCnVlPLtCp+NWT0fhE+/o0OpCWaRK3nO9hbV8lkXbmpUlQZB/jgS2csAQ3yj44VN0YUonYne2yu2SBBtG3/YhKGKqEra4xScLtb0iDpsWGS+DFWEhmOUsgRpFN5Jgxil/D0g1xtjenejNk6QMepsBj962YVbp/fZUnX/JvrOy6RQaHN+XJMyiWXSLbEAyXXUalnOTRFla1mvDBkDh/uKbHfLg5TtmqDycmjDAljSRxmErgUyB+qt+vzS+npN4UqXy7vW1lpZGM6t7ZQYBG8GpdVquXO8DPGJWSh1uhPYJ57rM6x8Yjm8ZWeJmK4GQMHYsTe+tuGHUcFgnHtmFRaGY24=")
+ko.login(qr=true)
 
 ku = LINETCR.LINE()
-ku.login(token="hhBcd7nVChF9uDNYCJ5s2c8KwWofaVF6fdCQMczC3lImd/7nEZHPqCB7/r+sl2XIKwI3ffLGsJ6vNivN7TORAEVvPH/uUNWfJCUYuB+oNrnojkBI7QHASfWBuic5CJNpWGOJWzmOyHDqdJ23wt+Zk60NklQB3g82MeFEjIxiQbTELBiz5ysiuVWWOj+cB82itX6zEEBbpHls6SoUitg6yd7bClZxSZ5nhL9PzSHSvaIU4kX9p/B3q5ADKUumrYiergUyB+qt+vzS+npN4UqXy7vW1lpZGM6t7ZQYBG8GpdVocFCb1WjRx5f3h1YDrMJM4JulBUi4Lp/RyileT70h+xjLBLGm00znLUiCr9DCMjI=")
+ku.login(qr=true)
 
 kk = ki = cl
 
