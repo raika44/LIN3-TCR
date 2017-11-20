@@ -11,16 +11,16 @@ import time,random,sys,json,codecs,threading,glob,re
 
 
 cl = LINETCR.LINE()
-cl.login(token='THot7EM5avOmfyZlqrHz')
+cl.login(token='Us4ppQWy8uLvYD0v0ondqqDFCJowLUJfzxwT8POQ+/sfCj3G8dw1o/uHtXshxzFfUTGYDJsLd0ljgQYz74mv7ur1frcKyElkFU1y+YMZTq0G2G1EOW/PI5oKp9W85vOx271L5KDBKPaSGisgPwdfjlOdY8PpfGfrsvDFhI+5nHfDTofK697pgpyqnWXJQVKW')
 
 kc = LINETCR.LINE()
-kc.login(token='Vri2uA4xwgwnje427jxb')
+kc.login(token='0bGIZODpO1pzyKcC4HAVmlmztex0fRs9I1jm1gInyKmhIrEVT1Pr1E3bMiL9a+2MwoDv2zY/z6Wpjk5nE8ii8z/cbolEVdvgxIBRSY4iKa8Xo9ufjeCEkgZ7HRyckaPhWJHCp/iPThX/JbSSxj2vK1OdY8PpfGfrsvDFhI+5nHfDTofK697pgpyqnWXJQVKW')
 
 ko = LINETCR.LINE()
-ko.login(token='CzjrurgrPXRxsrRf2fXS')
+ko.login(token='n34yEQ3kpNBSR7xPEhfWShMIcCZStqPumg60mcMKqdx6qq2Hz9o+ryziPB4WBWcgaCNQOul5JC/S4kV4c/VzALXfCbz80eJldzP0GyVTiJUDdWBUAvSbPu/0pwBO6Kt66O480Pf3oBh0Xzkn3PevsFOdY8PpfGfrsvDFhI+5nHfDTofK697pgpyqnWXJQVKW')
 
 ku = LINETCR.LINE()
-ku.login(token='DiD3aJMaEDW9XHUulyKb')
+ku.login(token='D6RMIWnjGdXxBTm8oSVpACpyluZMxI91dJwOgacuSBd8dJhYTtlRWbw9Gfe+Y8tQBwUqbhTPwR/a3v402+ohmalZjKgBfYDkpy+ASOcIDNzSusf2uCctgK358m4dw5tL/3sxtXlS+939haPK2iOoF1OdY8PpfGfrsvDFhI+5nHfDTofK697pgpyqnWXJQVKW')
 
 kk = ki = cl
 
