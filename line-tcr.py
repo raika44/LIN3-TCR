@@ -11,16 +11,16 @@ import time,random,sys,json,codecs,threading,glob,re
 
 
 cl = LINETCR.LINE()
-cl.login(qr=true)
+cl.login(qr=True)
 
 kc = LINETCR.LINE()
-kc.login(qr=true)
+kc.login(qr=True)
 
 ko = LINETCR.LINE()
-ko.login(qr=true)
+ko.login(qr=True)
 
 ku = LINETCR.LINE()
-ku.login(qr=true)
+ku.login(qr=True)
 
 kk = ki = cl
 
