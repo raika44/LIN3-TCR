@@ -56,6 +56,8 @@ helpMessage =""" [R.A] BOT Menu V.3  􀔃􀄆red check mark􏿿
 [Close Url] Menutup Url Group
 
 􀔃􀅕red arrow right􏿿 Command Private
+[Admin add @] tambah admin
+[adminlist] list admin
 [Set group] Menggatur Privasi Grup
 [Banned @] Bann Target 
 [Unban @]  Unbann Target
@@ -154,15 +156,6 @@ def NOTIFIED_READ_MESSAGE(op):
             pass
     except:
         pass
-
-def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
-    #print op
-    try:
-        sendMessage(op.param1, cl.getContact(op.param2).displayName + ", Selamat Datang Di Jones Room Mohon Agar Bersahabat")
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
-        return
 
 def bot(op):
     try:
@@ -2249,7 +2242,7 @@ def bot(op):
 
 #-----------------------------------------------
 
-            elif msg.text in ["say salam jones"]:
+            elif msg.text in ["Salam jones"]:
                 ki.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
@@ -2275,6 +2268,13 @@ def bot(op):
                 kc.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
 #-----------------------------------------------
 
+#-----------------------------------------------
+            elif msg.text in ["Creator"]:
+					msg.contentType = 13
+					msg.contentMetadata = {'mid': "u5427d8047ab127f5e237eaedd1f0b93b"}
+					cl.sendMessage(msg)
+#-----------------------------------------------
+					
        #-------------Fungsi Respon Start---------------------#
             elif msg.text in ["Respon","respon","Respon Dong","respon dong"]:
                 cl.sendText(msg.to,"...")
@@ -2316,6 +2316,21 @@ def bot(op):
                 kk.sendText(msg.to,"send contact")
                 kc.sendText(msg.to,"send contact")
       #-------------Fungsi Banned Send Contact Finish------------------#
+
+#-----------------------------------------------
+            elif ".Youtube " in msg.text:
+                 query = msg.text.replace(".Youtube ","")
+                 with requests.session() as s:
+                     s.headers['user-agent'] = 'Mozilla/5.0'
+                     url    = 'http://www.youtube.com/results'
+                     params = {'search_query': query}
+                     r    = s.get(url, params=params)
+                     soup = BeautifulSoup(r.content, 'html5lib')
+                     for a in soup.select('.yt-lockup-title > a[title]'):
+                         if '&List' not in a['href']:
+                               cl.sendText(msg.to,'http://www.youtube.com' + a['href'] + a['title'])
+#-----------------------------------------------
+
 #-----------------------------------------------
             elif "Admin add @" in msg.text:
                 if msg.from_ in creator:
