@@ -222,7 +222,7 @@ def bot(op):
                     kk.updateGroup(X)
                     Ti = kk.reissueGroupTicket(op.param1)
 
-            if op.param3 in Cmid:
+            if op.param3 in admin:
                 if op.param2 in Bmid:
                     X = kk.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -244,7 +244,7 @@ def bot(op):
                     ks.updateGroup(X)
                     Ti = ks.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Emid:
+            if op.param3 in admin:
                 if op.param2 in Dmid:
                     X = ks.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -255,7 +255,7 @@ def bot(op):
                     ka.updateGroup(X)
                     Ti = ka.reissueGroupTicket(op.param1)
                 
-            if op.param3 in Fmid:
+            if op.param3 in admin:
                 if op.param2 in Emid:
                     X = ka.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -303,7 +303,7 @@ def bot(op):
             print op.param1
             print op.param2
             print op.param3
-            if admin in op.param3:
+            if mid in op.param3:
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
@@ -734,7 +734,7 @@ def bot(op):
                         wait["blacklist"][op.param2] = True        
                     
         if op.type == 13:
-            if admin in op.param3:
+            if mid in op.param3:
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
