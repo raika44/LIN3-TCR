@@ -1859,29 +1859,32 @@ def bot(op):
 
 #-----------------------------------------------
          #----------------Fungsi Join Group Start-----------------------#
-            elif msg.text in ["Sini dong","Kuy join","Ayo masuk","my waifu sini"]:
+            elif msg.text in ["Sini dong","Kuy join","Ayo masuk","My waifu sini"]:
               if msg.from_ in admin:
-                        G = cl.getGroup(msg.to)
-                        ginfo = cl.getGroup(msg.to)
+                        G = admin.getGroup(msg.to)
+                        ginfo = admin.getGroup(msg.to)
                         G.preventJoinByTicket = False
-                        cl.updateGroup(G)
+                        admin.updateGroup(G)
                         invsend = 0
-                        Ticket = cl.reissueGroupTicket(msg.to)
+                        Ticket = admin.reissueGroupTicket(msg.to)
+                        cl.acceptGroupInvitationByTicket(msg.to,Ticket)
+                        time.sleep(0.2)
+			cl.sendText(msg.to,"hadir cintaku")
                         kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
+			kc.sendText(msg.to,"hadir sayang")
                         ko.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
+			ko.sendText(msg.to,"aku juga sayang")
                         ku.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
-			kc.sendText(msg.to,"hadir sayang")
-                        ko.sendText(msg.to,"aku juga sayang")
                         ku.sendText(msg.to,"aku disini yang")
-                        G = cl.getGroup(msg.to)
+                        G = admin.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        cl.updateGroup(G)
+                        admin.updateGroup(G)
                         print "Bot Complete"
                         G.preventJoinByTicket(G)
-                        cl.updateGroup(G)
+                        admin.updateGroup(G)
 
             elif msg.text in ["_First join"]:
               if msg.form_ in admin:
