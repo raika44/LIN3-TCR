@@ -1861,15 +1861,12 @@ def bot(op):
          #----------------Fungsi Join Group Start-----------------------#
             elif msg.text in ["Sini dong","Kuy join","Ayo masuk","My waifu sini"]:
               if msg.from_ in admin:
-                        G = admin.getGroup(msg.to)
-                        ginfo = admin.getGroup(msg.to)
+                        G = cl.getGroup(msg.to)
+                        ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = False
-                        admin.updateGroup(G)
+                        cl.updateGroup(G)
                         invsend = 0
-                        Ticket = admin.reissueGroupTicket(msg.to)
-                        cl.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-			cl.sendText(msg.to,"hadir cintaku")
+                        Ticket = cl.reissueGroupTicket(msg.to)
                         kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
 			kc.sendText(msg.to,"hadir sayang")
@@ -1879,12 +1876,12 @@ def bot(op):
                         ku.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
                         ku.sendText(msg.to,"aku disini yang")
-                        G = admin.getGroup(msg.to)
+                        G = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
-                        admin.updateGroup(G)
+                        cl.updateGroup(G)
                         print "Bot Complete"
                         G.preventJoinByTicket(G)
-                        admin.updateGroup(G)
+                        cl.updateGroup(G)
 
             elif msg.text in ["_First join"]:
               if msg.form_ in admin:
