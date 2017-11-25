@@ -189,7 +189,7 @@ def bot(op):
         #------Cancel Invite User Finish------#
             
         if op.type == 13:
-	    if inviter.from_ in Bots:
+	    if invite.from_ in Bots:
                 if op.param3 in mid:
                     if op.param2 in Amid:
                         G = Amid.getGroup(op.param1)
