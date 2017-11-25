@@ -1859,7 +1859,7 @@ def bot(op):
 
 #-----------------------------------------------
          #----------------Fungsi Join Group Start-----------------------#
-            elif msg.text in ["Sini dong","Kuy join","Ayo masuk"]:
+            elif msg.text in ["Sini dong","Kuy join","Ayo masuk","my waifu sini"]:
               if msg.from_ in admin:
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -1873,6 +1873,9 @@ def bot(op):
                         time.sleep(0.2)
                         ku.acceptGroupInvitationByTicket(msg.to,Ticket)
                         time.sleep(0.2)
+			kc.sendText(msg.to,"hadir sayang")
+                        ko.sendText(msg.to,"aku juga sayang")
+                        ku.sendText(msg.to,"aku disini yang")
                         G = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
                         cl.updateGroup(G)
@@ -2052,8 +2055,8 @@ def bot(op):
                     gs = kk.getGroup(msg.to)
                     gs = kc.getGroup(msg.to)
                     ki.sendText(msg.to,"maaf kalo gak sopan")
-                    kk.sendText(msg.to,"makasih semuanya..")
-                    kc.sendText(msg.to,"hehehhehe")
+                    kk.sendText(msg.to,"dasar kalian jones..")
+                    kc.sendText(msg.to,"wkwk grup jones")
                     msg.contentType = 13
                     msg.contentMetadata = {'mid': mid}
                     ks.sendMessage(msg)
