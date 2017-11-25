@@ -159,9 +159,9 @@ def NOTIFIED_READ_MESSAGE(op):
 
 def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
     try:
-	if op.param1 in wait2 ['readPoint']
+	if op.param1 in wait2 ['readPoint']:
 	    sendMessage(op.param1, cl.getContact(op.param2).displayName + ", Selamat Datang di jones room")
-	    if Name in wait2 ['readMember']
+	    if Name in wait2 ['readMember']:
 		pass
 	    else:
 		 wait2 ['readMember'][op.param1 "\nãƒ»" + Name
