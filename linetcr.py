@@ -22,13 +22,13 @@ ko.login(qr=True)
 ku = LINETCR.LINE()
 ku.login(qr=True)
 
-kk = ki = cl
+cl
 
-ka = ks = kc
+ki = kk = kc
 
-kb = ko
+ka = ks = kb = ko
 
-ke = ku
+kb = ke = ku
 
 print "login success"
 reload(sys)
@@ -189,7 +189,7 @@ def bot(op):
         #------Cancel Invite User Finish------#
             
         if op.type == 13:
-            if op.param3 in admin:
+            if op.param3 in mid:
                 if op.param2 in Amid:
                     G = Amid.getGroup(op.param1)
                     G.preventJoinByTicket = False
@@ -200,7 +200,7 @@ def bot(op):
                     Amid.updateGroup(G)
                     Ticket = Amid.reissueGroupTicket(op.param1)
 
-            if op.param3 in admin:
+            if op.param3 in Amid:
                 if op.param2 in mid:
                     X = cl.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -211,7 +211,7 @@ def bot(op):
                     ki.updateGroup(X)
                     Ti = ki.reissueGroupTicket(op.param1)
 
-            if op.param3 in admin:
+            if op.param3 in Bmid:
                 if op.param2 in Amid:
                     X = ki.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -222,7 +222,7 @@ def bot(op):
                     kk.updateGroup(X)
                     Ti = kk.reissueGroupTicket(op.param1)
 
-            if op.param3 in admin:
+            if op.param3 in Cmid:
                 if op.param2 in Bmid:
                     X = kk.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -233,7 +233,7 @@ def bot(op):
                     kc.updateGroup(X)
                     Ti = kc.reissueGroupTicket(op.param1)
                 
-            if op.param3 in admin:
+            if op.param3 in Dmid:
                 if op.param2 in Cmid:
                     X = kc.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -244,7 +244,7 @@ def bot(op):
                     ks.updateGroup(X)
                     Ti = ks.reissueGroupTicket(op.param1)
                 
-            if op.param3 in admin:
+            if op.param3 in Emid:
                 if op.param2 in Dmid:
                     X = ks.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -255,7 +255,7 @@ def bot(op):
                     ka.updateGroup(X)
                     Ti = ka.reissueGroupTicket(op.param1)
                 
-            if op.param3 in admin:
+            if op.param3 in Fmid:
                 if op.param2 in Emid:
                     X = ka.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -266,7 +266,7 @@ def bot(op):
                     kb.updateGroup(X)
                     Ti = kb.reissueGroupTicket(op.param1)
                 
-            if op.param3 in admin:
+            if op.param3 in Gmid:
                 if op.param2 in Fmid:
                     X = kb.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -277,7 +277,7 @@ def bot(op):
                     ko.updateGroup(X)
                     Ti = ko.reissueGroupTicket(op.param1)
                 
-            if op.param3 in admin:
+            if op.param3 in Hmid:
                 if op.param2 in Gmid:
                     X = ko.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -288,7 +288,7 @@ def bot(op):
                     ke.updateGroup(X)
                     Ti = ke.reissueGroupTicket(op.param1)
                     
-            if op.param3 in admin:
+            if op.param3 in Imid:
                 if op.param2 in mid:
                     X = cl.getGroup(op.param1)
                     X.preventJoinByTicket = False
@@ -297,7 +297,7 @@ def bot(op):
                     ku.acceptGroupInvitationByTicket(op.param1,Ti)
                     X.preventJoinByTicket = True
                     cl.updateGroup(X)
-                    Ti = cl.reissueGroupTicket(op.param1)          
+                    Ti = cl.reissueGroupTicket(op.param1)        
 
         if op.type == 13:
             print op.param1
