@@ -189,7 +189,7 @@ def bot(op):
         #------Cancel Invite User Finish------#
             
         if op.type == 13:
-	    if msg.from_ in Bots:
+	    if msg.from_ in admin:
                 if op.param3 in mid:
                     if op.param2 in Amid:
                         G = Amid.getGroup(op.param1)
@@ -301,7 +301,7 @@ def bot(op):
                         Ti = cl.reissueGroupTicket(op.param1)        
 
         if op.type == 13:
-	    if msg.from_ in Bots:
+	    if msg.from_ in admin:
                 print op.param1
                 print op.param2
                 print op.param3
