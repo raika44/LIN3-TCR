@@ -30,11 +30,11 @@ kb = ko
 
 ke = ku
 
-tracer = cl.getProfile(), cl.getSettings(), LineTracer(cl)
-
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
+tracer = cl.getProfile(), cl.getSettings(), LineTracer(cl)
 
 helpMessage =""" [R.A] BOT Menu V.3  􀔃􀄆red check mark􏿿
 
