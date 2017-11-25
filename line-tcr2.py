@@ -34,8 +34,6 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-tracer = cl.getProfile(), cl.getSettings(), LineTracer(cl)
-
 helpMessage =""" [R.A] BOT Menu V.3  􀔃􀄆red check mark􏿿
 
 􀔃􀅕red arrow right􏿿 Command Public
@@ -165,8 +163,6 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
         print e
         print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
         return
-
-tracer.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
 
 def bot(op):
     try:
