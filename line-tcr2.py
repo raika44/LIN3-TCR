@@ -157,6 +157,20 @@ def NOTIFIED_READ_MESSAGE(op):
     except:
         pass
 
+def NOTIFIED_ACCEPT_GROUP_INVITATION[op]
+    try:
+	if op.param1 in wait2 ['readPoint']
+	    sendMessage(op.param1, cl.getContact(op.param2).displayName + ", Selamat Datang di jones room")
+	    if Name in wait2 ['readMember']
+		pass
+	    else:
+		 wait2 ['readMember'][op.param1 "\nãƒ»" + Name
+		 wait2['ROM'][op.param1][op.param2] = "ãƒ»" + Name
+	else:
+	     pass
+     except:
+	    pass
+
 def bot(op):
     try:
         if op.type == 0:
@@ -1275,7 +1289,8 @@ def bot(op):
                 kk.sendMessage(msg)
             elif msg.text in ["Please"]:
                 msg.contentType = 7
-                msg.text = "Bantuin pls"
+                msg.text = None
+		cl.sendText(msg.to,"Bantuin itu")
                 msg.contentMetadata = {
                                      "STKID": "4",
                                      "STKPKGID": "1",
@@ -1310,7 +1325,8 @@ def bot(op):
                 ki.sendMessage(msg)
             elif msg.text in ["Welcome"]:
                 msg.contentType = 7
-                msg.text = "Selamat Datang Di jones room"
+                msg.text = None
+		cl.sendText(msg.to,"Selamat Datang Di jones room")
                 msg.contentMetadata = {
                                      "STKID": "247",
                                      "STKPKGID": "3",
@@ -2149,8 +2165,8 @@ def bot(op):
                     if targets == []:
                         cl.sendText(msg.to,"Dilarang Banned Bot")
                         ki.sendText(msg.to,"Dilarang Banned Bot")
-                        kk.sendText(msg.to,"Dilarang Banned Bot")
                         kc.sendText(msg.to,"Dilarang Banned Bot")
+                        ko.sendText(msg.to,"Dilarang Banned Bot")
                     else:
                         for target in targets:
                             try:
@@ -2195,36 +2211,36 @@ def bot(op):
            
         #-------------Fungsi Spam Start---------------------#
             elif msg.text in ["Upchat","upchat"]:
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                cl.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                ki.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
-                kk.sendText(msg.to,"P 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                cl.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                kc.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
+                ko.sendText(msg.to,"Jones 􀔃􀆶squared up!􏿿")
         #-------------Fungsi Spam Finish---------------------#
 
         #-------------Fungsi Broadcast Start------------#
@@ -2244,16 +2260,16 @@ def bot(op):
 
             elif msg.text in ["Salam jones"]:
                 ki.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say didik pekok"]:
-                ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["say bobo ah","Bobo dulu ah"]:
-                ki.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
+                ko.sendText(msg.to,"salam jones juga 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Sayang dmn"]:
+                ki.sendText(msg.to,"disinii beb")
+                kc.sendText(msg.to,"disni jugaa yang")
+                ko.sendText(msg.to,"kenapa beb?")
+            elif msg.text in ["Bobo ah","Bobo dulu ah"]:
+                ki.sendText(msg.to,"Selamat malam yang")
                 kk.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Have a nice dream beb 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"dadah beb")
             elif msg.text in ["Cv say chomel pekok"]:
                 ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
@@ -2398,6 +2414,7 @@ def bot(op):
                     cl.sendText(msg.to,mc)
                     print "[Command]Stafflist executed" 
 #-----------------------------------------------
+
 #-----------------------------------------------
             elif "Steal " in msg.text:
                 if msg.from_ in admin:
