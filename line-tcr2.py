@@ -165,7 +165,7 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
 		pass
 	    else:
 		pass
-     except:
+    except:
 	 pass
 
 def bot(op):
