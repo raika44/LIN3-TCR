@@ -163,7 +163,7 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
         print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
         return
 
-tracer.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
+kc.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
 
 def bot(op):
     try:
