@@ -2000,7 +2000,7 @@ def bot(op):
     #-------------Fungsi Leave Group Finish---------------#
     
     #-------------Fungsi Tag All Start---------------#
-            elif msg.text in ["kiwkiw","Tagall","kuchiyose no jutsu","summon all member"]:
+            elif msg.text in ["kiwkiw","Tagall","Kuchiyose no jutsu","Summon all member"]:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
 
