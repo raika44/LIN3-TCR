@@ -164,12 +164,9 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
 	    if Name in wait2 ['readMember']:
 		pass
 	    else:
-		 wait2 ['readMember'][op.param1 "\nãƒ»" + sendMessage
-		 wait2['ROM'][op.param1][op.param2] = "ãƒ»" + sendMessage
-	else:
-	     pass
+		pass
      except:
-	    pass
+	 pass
 
 def bot(op):
     try:
