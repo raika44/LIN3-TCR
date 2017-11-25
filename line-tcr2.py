@@ -1937,13 +1937,16 @@ def bot(op):
     #----------------------Fungsi Join Group Finish---------------#
 
     #-------------Fungsi Leave Group Start---------------#
-            elif msg.text in ["Bye all"]:
+            elif msg.text in ["Bye all","Bye sayang]:
               if msg.from_ in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
+			kc.sendText(msg.to,"see you yang")
                         kc.leaveGroup(msg.to)
+			ko.sendText(msg.to,"makasih sayang")
                         ko.leaveGroup(msg.to)
+			ku.sendText(msg.to,"dadah bebih")
                         ku.leaveGroup(msg.to)
                     except:
                         pass
