@@ -146,7 +146,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 def NOTIFIED_READ_MESSAGE(op):
     try:
         if op.param1 in wait2['readPoint']:
-            Name = cl.getContact(op.param2).displayName
+            Name = admin.getContact(op.param2).displayName
             if Name in wait2['readMember'][op.param1]:
                 pass
             else:
@@ -189,7 +189,7 @@ def bot(op):
         #------Cancel Invite User Finish------#
             
         if op.type == 13:
-            if op.param3 in admin:
+            if op.param3 in mid:
                 if op.param2 in Amid:
                     G = Amid.getGroup(op.param1)
                     G.preventJoinByTicket = False
