@@ -154,6 +154,16 @@ def NOTIFIED_READ_MESSAGE(op):
     except:
         pass
 
+def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
+    #print op
+    try:
+        sendMessage(op.param1, cl.getContact(op.param2).displayName + ", Selamat Datang Di Jones Room Mohon Agar Bersahabat")
+    except Exception as e:
+        print e
+        print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
+        return
+
+tracer.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
 
 def bot(op):
     try:
