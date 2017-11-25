@@ -189,7 +189,7 @@ def bot(op):
         #------Cancel Invite User Finish------#
             
         if op.type == 13:
-            if op.param3 in mid:
+            if op.param3 in admin:
                 if op.param2 in Amid:
                     G = Amid.getGroup(op.param1)
                     G.preventJoinByTicket = False
@@ -303,7 +303,7 @@ def bot(op):
             print op.param1
             print op.param2
             print op.param3
-            if admin in op.param3:
+            if mid in op.param3:
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
