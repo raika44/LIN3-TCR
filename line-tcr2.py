@@ -22,13 +22,15 @@ ko.login(qr=True)
 ku = LINETCR.LINE()
 ku.login(qr=True)
 
-tracer = kk = ki = cl
+kk = ki = cl
 
 ka = ks = kc
 
 kb = ko
 
 ke = ku
+
+tracer = cl.getProfile(), cl.getSettings(), LineTracer(cl)
 
 print "login success"
 reload(sys)
