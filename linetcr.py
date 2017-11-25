@@ -312,9 +312,9 @@ def bot(op):
                             if len(G.members) <= wait["autoCancel"]["members"]:
                                 cl.rejectGroupInvitation(op.param1)
                             else:
-                                 cl.acceptGroupInvitation(op.param1)
+                                cl.acceptGroupInvitation(op.param1)
                         else:
-                             cl.acceptGroupInvitation(op.param1)
+                            cl.acceptGroupInvitation(op.param1)
                     elif wait["autoCancel"]["on"] == True:
                          if len(G.members) <= wait["autoCancel"]["members"]:
                             cl.rejectGroupInvitation(op.param1)
@@ -327,7 +327,7 @@ def bot(op):
                       if matched_list == []:
                           pass
                       else:
-                           cl.cancelGroupInvitation(op.param1, matched_list)
+                          cl.cancelGroupInvitation(op.param1, matched_list)
                     
         #------Joined User Kick start------#
         if op.type == 17:
