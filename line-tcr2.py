@@ -157,17 +157,6 @@ def NOTIFIED_READ_MESSAGE(op):
     except:
         pass
 
-def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
-    try:
-	if op.param1 in wait2 ['readPoint']:
-	    sendMessage(op.param1, cl.getContact(op.param2).displayName + ", Selamat Datang di jones room")
-	    if Name in wait2 ['readMember']:
-		pass
-	    else:
-		pass
-    except:
-	 pass
-
 def bot(op):
     try:
         if op.type == 0:
