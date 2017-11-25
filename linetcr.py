@@ -307,7 +307,7 @@ def bot(op):
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
-                        if len(G.members) <= wait["autoCancel"]["members"]:
+                        if len(G.admin) <= wait["autoCancel"]["admin"]:
                             cl.rejectGroupInvitation(op.param1)
                         else:
                             cl.acceptGroupInvitation(op.param1)
@@ -738,7 +738,7 @@ def bot(op):
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
-                        if len(G.members) <= wait["autoCancel"]["members"]:
+                        if len(G.admin) <= wait["autoCancel"]["admin"]:
                             cl.rejectGroupInvitation(op.param1)
                         else:
                             cl.acceptGroupInvitation(op.param1)
