@@ -22,7 +22,7 @@ ko.login(qr=True)
 ku = LINETCR.LINE()
 ku.login(qr=True)
 
-kk = ki = cl
+tracer = kk = ki = cl
 
 ka = ks = kc
 
@@ -94,6 +94,7 @@ Imid = ku.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
 admin=["u5427d8047ab127f5e237eaedd1f0b93b"]
+creator=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -163,7 +164,7 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
         print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
         return
 
-kk.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
+tracer.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
 
 def bot(op):
     try:
@@ -2317,7 +2318,133 @@ def bot(op):
                 kk.sendText(msg.to,"send contact")
                 kc.sendText(msg.to,"send contact")
       #-------------Fungsi Banned Send Contact Finish------------------#
-      
+#-----------------------------------------------
+            elif "Admin add @" in msg.text:
+                if msg.from_ in creator:
+                    print "[Command]Staff add executing"
+                    _name = msg.text.replace("Admin add @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    gs = kk.getGroup(msg.to)
+                    gs = kc.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.append(target)
+                                cl.sendText(msg.to,"Admin Ditambahkan")
+                            except:
+                                pass
+                    print "[Command]Staff add executed"
+                else:
+                    cl.sendText(msg.to,"Command DiTolak")
+                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
+
+            elif "Admin remove @" in msg.text:
+                if msg.from_ in creator:
+                    print "[Command]Staff remove executing"
+                    _name = msg.text.replace("Admin remove @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    gs = kk.getGroup(msg.to)
+                    gs = kc.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.remove(target)
+                                cl.sendText(msg.to,"Admin Dihapus")
+                            except:
+                                pass
+                    print "[Command]Staff remove executed"
+                else:
+                    cl.sendText(msg.to,"Command DiTolak")
+                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
+
+            elif msg.text in ["Adminlist","adminlist"]:
+              if msg.from_ in creator:
+                if admin == []:
+                    cl.sendText(msg.to,"The adminlist is empty")
+                else:
+                    cl.sendText(msg.to,"Tunggu...")
+                    mc = ""
+                    for mi_d in admin:
+                        mc += "->" +cl.getContact(mi_d).displayName + "\n"
+                    cl.sendText(msg.to,mc)
+                    print "[Command]Stafflist executed" 
+#-----------------------------------------------
+#-----------------------------------------------
+            elif "Steal " in msg.text:
+                if msg.from_ in admin:
+                    salsa = msg.text.replace("Steal ","")
+                    Manis = cl.getContact(salsa)
+                    Imoet = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                    try:
+                        cover = cl.channel.getCover(Manis)
+                    except:
+                        cover = ""
+                    cl.sendText(msg.to,"Gambar Foto Profilenya")
+                    cl.sendImageWithURL(msg.to,Imoet)
+                    if cover == "":
+                        cl.sendText(msg.to,"User tidak memiliki cover atau sejenisnya")
+                    else:
+                        cl.sendText(msg.to,"Gambar Covernya")
+                        cl.sendImageWithURL(msg.to,cover)
+#-----------------------------------------------
+            elif "Steal @" in msg.text:
+                if msg.from_ in admin:
+                    if msg.toType == 2:
+                        steal = msg.text.replace("Steal @","")
+                        stealname = steal.rstrip(" ")
+                        group = cl.getGroup(msg.to)
+                        targets = []
+                        if steal == "":
+                            cl.sendText(msg.to,"Invalid user")
+                        else:
+                            for i in group.members:
+                                if stealname == i.displayName:
+                                    targets.append(i.mid)
+                            if targets == []:
+                                cl.sendText(msg.to,"User tidak ditemukan")
+                            else:
+                                for target in targets:
+                                    try:
+                                        contact = cl.getContact(target)
+                                        image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                                        try:
+                                            cover = cl.channel.getCover(contact)
+                                        except:
+                                            cover = ""
+                                        try:
+                                            cl.sendText(msg.to,"Gambar Foto Profilenya")
+                                            cl.sendImageWithURL(msg.to,image)
+                                            if cover == "":
+                                                cl.sendText(msg.to,"User tidak memiliki cover atau sejenisnya")
+                                            else:
+                                                cl.sendText(msg.to,"Gambar Covernya")
+                                                cl.sendImageWithURL(msg.to,cover)
+                                        except Exception as error:
+                                            cl.sendText(msg.to,(error))
+                                            break
+                                    except:
+                                        cl.sendText(msg.to,"Error!")
+                                        break
+                    else:
+                        cl.sendText(msg.to,"Tidak bisa dilakukan di luar wilayah")
+#-----------------------------------------------
+
       #-------------Fungsi Bannlist Start------------------#          
             elif msg.text in ["Banlist"]:
                 if wait["blacklist"] == {}:
