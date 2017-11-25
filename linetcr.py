@@ -323,11 +323,11 @@ def bot(op):
                      InviterX = Inviter.split(",")
                      matched_list = []
                      for tag in wait["blacklist"]:
-                          matched_list+=filter(lambda str: str == tag, InviterX)
-                      if matched_list == []:
-                          pass
-                      else:
-                          cl.cancelGroupInvitation(op.param1, matched_list)
+                         matched_list+=filter(lambda str: str == tag, InviterX)
+                     if matched_list == []:
+                         pass
+                     else:
+                         cl.cancelGroupInvitation(op.param1, matched_list)
                     
         #------Joined User Kick start------#
         if op.type == 17:
