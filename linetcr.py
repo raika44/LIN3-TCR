@@ -303,7 +303,7 @@ def bot(op):
             print op.param1
             print op.param2
             print op.param3
-            if mid in op.param3:
+            if admin in op.param3:
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
@@ -317,7 +317,7 @@ def bot(op):
                     if len(G.members) <= wait["autoCancel"]["members"]:
                         cl.rejectGroupInvitation(op.param1)
             else:
-                Inviter = op.param3.replace("u5427d8047ab127f5e237eaedd1f0b93b",',')
+                Inviter = op.param3.replace("",',')
                 InviterX = Inviter.split(",")
                 matched_list = []
                 for tag in wait["blacklist"]:
