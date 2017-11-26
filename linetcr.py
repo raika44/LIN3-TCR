@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
 
-import TOBY
-from TOBY.lib.curve.ttypes import *
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
-cl = TOBY.LINE()
+cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-kc = TOBY.LINE()
+kc = LINETCR.LINE()
 kc.login(qr=True)
 kc.loginResult()
 
-kk = TOBY.LINE()
+kk = LINETCR.LINE()
 kk.login(qr=True)
 kk.loginResult()
 
-ki = TOBY.LINE()
+ki = LINETCR.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
@@ -78,7 +78,7 @@ helpMessage ="""!CommandMember!
 => Vk = Mengeluarkan 2 Anggora/Lebih Dari Grup
 => Cleanse = Membersihkan Grup
 ==================================================
-BOT : TOBY
+BOT : Kirisaki Chitoge
 SUPPORT BY : CYBER BOT CRIME
 Hanya Admin Yang Bisa Menggunakan Bot
 """
