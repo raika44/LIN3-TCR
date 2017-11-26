@@ -21,7 +21,7 @@ ki = TOBY.LINE()
 ki.login(qr=True)
 ki.loginResult()
 
-ki = kk = kc = cl 
+cl
 
 print "login success"
 reload(sys)
