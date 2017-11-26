@@ -1568,7 +1568,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to, "An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")
 #-----------------------------------------------
-            elif msg.text in ["Tagall","Kuchiyose no jutsu]:
+            elif msg.text in ["Tagall","Kuchiyose no jutsu"]:
               if msg.from_ in admin:
                 group = cl.getGroup(msg.to)
                 nama = [contact.mid for contact in group.members]
