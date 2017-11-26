@@ -19,8 +19,8 @@ kc.login(token="En4aaHlzzXHaZrO74Sqb.672la4CfyuJmLCgFJdKosW.NjB/NCDLjL7uHp57WsQj
 ko = LINETCR.LINE()
 ko.login(token="EnH35WQyaOLcZsHmZns2.Zm4gXz6MY8xdnV92S49yaG.xW+zBNcyqcVAIfVtWovHuFOerXkMXsS01er3E39OmF4=")
 
-ku = LINETCR.LINE()
-ku.login(token="En8VVfFSRLQCDrZkYq34.AbZfX80renrInaDEsR0v1a.s62EO6keurG1/tmN3GEuq2IVk4/Rp1xNWTRqRtvZlYc=")
+ke = LINETCR.LINE()
+ke.login(token="En8VVfFSRLQCDrZkYq34.AbZfX80renrInaDEsR0v1a.s62EO6keurG1/tmN3GEuq2IVk4/Rp1xNWTRqRtvZlYc=")
 
 cl
 
@@ -202,6 +202,41 @@ def bot(op):
                   ki.acceptGroupInvitation(op.param1)
                 else:
                   ki.rejectGroupInvitation(op.param1)
+		
+            if Bmid in op.param3:
+              if wait["autoJoin"] == True:
+                if op.param2 in Bots or admin:
+                  kk.acceptGroupInvitation(op.param1)
+                else:
+                  kk.rejectGroupInvitation(op.param1)
+		
+            if Cmid in op.param3:
+              if wait["autoJoin"] == True:
+                if op.param2 in Bots or admin:
+                  kc.acceptGroupInvitation(op.param1)
+                else:
+                  kc.rejectGroupInvitation(op.param1)
+		
+            if Dmid in op.param3:
+              if wait["autoJoin"] == True:
+                if op.param2 in Bots or admin:
+                  ks.acceptGroupInvitation(op.param1)
+                else:
+                  ks.rejectGroupInvitation(op.param1)
+		
+            if Emid in op.param3:
+              if wait["autoJoin"] == True:
+                if op.param2 in Bots or admin:
+                  ka.acceptGroupInvitation(op.param1)
+                else:
+                  ka.rejectGroupInvitation(op.param1)
+		
+            if Fmid in op.param3:
+              if wait["autoJoin"] == True:
+                if op.param2 in Bots or admin:
+                  kb.acceptGroupInvitation(op.param1)
+                else:
+                  kb.rejectGroupInvitation(op.param1)
                 
             if Gmid in op.param3:
               if wait["autoJoin"] == True:
@@ -210,12 +245,19 @@ def bot(op):
                 else:
                   ko.rejectGroupInvitation(op.param1)
                 
+            if Hmid in op.param3:
+              if wait["autoJoin"] == True:
+                if op.param2 in Bots or admin:
+                  ke.acceptGroupInvitation(op.param1)
+                else:
+                  ke.rejectGroupInvitation(op.param1)
+	
             if Imid in op.param3:
               if wait["autoJoin"] == True:
                 if op.param2 in Bots or admin:
                   ku.acceptGroupInvitation(op.param1)
                 else:
-                  ku.rejectGroupInvitation(op.param1)    
+                  ku.rejectGroupInvitation(op.param1)
                     
         #------Joined User Kick start------#
         if op.type == 17:
@@ -582,7 +624,7 @@ def bot(op):
                     else:
                         wait["blacklist"][op.param2] = True
                         
-                if Imid in op.param3:
+                if Hmid in op.param3:
                     if op.param2 in Bots:
                         pass
                     try:
