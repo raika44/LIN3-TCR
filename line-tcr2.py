@@ -335,7 +335,7 @@ def bot(op):
                 if matched_list == []:
                     pass
                 else:
-                    cl.cancelGroupInvitation(op.param1, matched_list
+                    cl.cancelGroupInvitation(op.param1, matched_list)
                     
         #------Joined User Kick start------#
         if op.type == 17:
