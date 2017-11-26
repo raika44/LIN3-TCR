@@ -191,28 +191,28 @@ def bot(op):
         if op.type == 13:
             if mid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
+                if op.param2 in Bots or admin:
                   cl.acceptGroupInvitation(op.param1)
                 else:
                   cl.rejectGroupInvitation(op.param1)
 		
             if Amid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
+                if op.param2 in Bots or admin:
                   ki.acceptGroupInvitation(op.param1)
                 else:
                   ki.rejectGroupInvitation(op.param1)
                 
             if Gmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
+                if op.param2 in Bots or admin:
                   ko.acceptGroupInvitation(op.param1)
                 else:
                   ko.rejectGroupInvitation(op.param1)
                 
-            if imid in op.param3:
+            if Imid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
+                if op.param2 in Bots or admin:
                   ku.acceptGroupInvitation(op.param1)
                 else:
                   ku.rejectGroupInvitation(op.param1)    
