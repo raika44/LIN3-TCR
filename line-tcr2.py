@@ -83,6 +83,7 @@ Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 """
 KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
 DEF=[ka,kb,ko,ke,ku]
+admin = admin.getProfile().u5427d8047ab127f5e237eaedd1f0b93b
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
