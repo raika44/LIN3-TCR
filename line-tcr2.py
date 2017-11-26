@@ -17,7 +17,7 @@ kc = LINETCR.LINE()
 kc.login(token="En4aaHlzzXHaZrO74Sqb.672la4CfyuJmLCgFJdKosW.NjB/NCDLjL7uHp57WsQj7aTuwYZU3bcC55m8i0ggGk8=")
 
 ko = LINETCR.LINE()
-ko.login(token="EnGdCCh2sjVYPl3BgXj2.Zm4gXz6MY8xdnV92S49yaG.ec+UC+Gl/SpCQdUkc/tL6/FlSqp+JKGtVbEvzxxFRls=")
+ko.login(token="EnH35WQyaOLcZsHmZns2.Zm4gXz6MY8xdnV92S49yaG.xW+zBNcyqcVAIfVtWovHuFOerXkMXsS01er3E39OmF4=")
 
 ku = LINETCR.LINE()
 ku.login(token="En8VVfFSRLQCDrZkYq34.AbZfX80renrInaDEsR0v1a.s62EO6keurG1/tmN3GEuq2IVk4/Rp1xNWTRqRtvZlYc=")
