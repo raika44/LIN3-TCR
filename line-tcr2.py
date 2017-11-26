@@ -22,13 +22,13 @@ ko.login(token="EnGdCCh2sjVYPl3BgXj2.Zm4gXz6MY8xdnV92S49yaG.ec+UC+Gl/SpCQdUkc/tL
 ku = LINETCR.LINE()
 ku.login(token="En8VVfFSRLQCDrZkYq34.AbZfX80renrInaDEsR0v1a.s62EO6keurG1/tmN3GEuq2IVk4/Rp1xNWTRqRtvZlYc=")
 
-kk = ki = cl
+cl
 
-ka = ks = kc
+kk = ki = kc
 
-kb = ko
+ka = ks = ko
 
-ke = ku
+kb = ke = ku
 
 print "login success"
 reload(sys)
