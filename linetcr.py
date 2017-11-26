@@ -107,7 +107,7 @@ wait = {
     'message':"cie ngeadd",
     "lang":"JP",
     "comment":"cie ngeadd",
-    "commentOn":False,
+    "commentOn":True,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
@@ -300,32 +300,33 @@ def bot(op):
                     Ti = cl.reissueGroupTicket(op.param1)        
 
         if op.type == 13:
-            print op.param1
-            print op.param2
-            print op.param3
-            if mid in op.param3:
-                G = cl.getGroup(op.param1)
-                if wait["autoJoin"] == True:
-                    if wait["autoCancel"]["on"] == True:
-                        if len(G.admin) <= wait["autoCancel"]["admin"]:
-                            cl.rejectGroupInvitation(op.param1)
+	    if op.param3 in admin:
+                print op.param1
+                print op.param2
+                print op.param3
+                if mid in op.param3:
+                    G = cl.getGroup(op.param1)
+                    if wait["autoJoin"] == True:
+                       if wait["autoCancel"]["on"] == True:
+                           if len(G.members) <= wait["autoCancel"]["members"]:
+                               cl.rejectGroupInvitation(op.param1)
+                           else:
+                               cl.acceptGroupInvitation(op.param1)
                         else:
                             cl.acceptGroupInvitation(op.param1)
-                    else:
-                        cl.acceptGroupInvitation(op.param1)
-                elif wait["autoCancel"]["on"] == True:
-                    if len(G.members) <= wait["autoCancel"]["members"]:
-                        cl.rejectGroupInvitation(op.param1)
-            else:
-                Inviter = op.param3.replace("",',')
-                InviterX = Inviter.split(",")
-                matched_list = []
-                for tag in wait["blacklist"]:
-                    matched_list+=filter(lambda str: str == tag, InviterX)
-                if matched_list == []:
-                    pass
+                    elif wait["autoCancel"]["on"] == True:
+                        if len(G.members) <= wait["autoCancel"]["members"]:
+                           cl.rejectGroupInvitation(op.param1)
                 else:
-                    cl.cancelGroupInvitation(op.param1, matched_list)
+                    Inviter = op.param3.replace("",',')
+                    InviterX = Inviter.split(",")
+                    matched_list = []
+                    for tag in wait["blacklist"]:
+                        matched_list+=filter(lambda str: str == tag, InviterX)
+                    if matched_list == []:
+                        pass
+                    else:
+                        cl.cancelGroupInvitation(op.param1, matched_list)
                     
         #------Joined User Kick start------#
         if op.type == 17:
@@ -738,7 +739,7 @@ def bot(op):
                 G = cl.getGroup(op.param1)
                 if wait["autoJoin"] == True:
                     if wait["autoCancel"]["on"] == True:
-                        if len(G.admin) <= wait["autoCancel"]["admin"]:
+                        if len(G.members) <= wait["autoCancel"]["members"]:
                             cl.rejectGroupInvitation(op.param1)
                         else:
                             cl.acceptGroupInvitation(op.param1)
@@ -2576,38 +2577,14 @@ def nameUpdate():
                 profile.displayName = wait["cName"]
                 cl.updateProfile(profile)
 
-                profile2 = ki.getProfile()
-                profile2.displayName = wait["cName2"]
-                ki.updateProfile(profile2)
-
-                profile3 = kk.getProfile()
-                profile3.displayName = wait["cName3"]
-                kk.updateProfile(profile3)
-
                 profile4 = kc.getProfile()
                 profile4.displayName = wait["cName4"]
                 kc.updateProfile(profile4)
 
-                profile5 = ks.getProfile()
-                profile5.displayName = wait["cName5"]
-                ks.updateProfile(profile5a)
-
-                profile6 = ka.getProfile()
-                profile6.displayName = wait["cName6"]
-                ka.updateProfile(profile6)
-
-                profile7 = kb.getProfile()
-                profile7.displayName = wait["cName7"]
-                kb.updateProfile(profile7)
-
                 profile8 = ko.getProfile()
                 profile8.displayName = wait["cName8"]
                 ko.updateProfile(profile8)
-                
-                profile9 = ke.getProfile()
-                profile9.displayName = wait["cName9"]
-                ke.updateProfile(profile9)
-                
+
                 profile10 = ku.getProfile()
                 profile10.displayName = wait["cName10"]
                 ku.updateProfile(profile10)
