@@ -96,6 +96,7 @@ Imid = ku.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
 admin=["u5427d8047ab127f5e237eaedd1f0b93b"]
+owner=["u5427d8047ab127f5e237eaedd1f0b93b"]
 creator=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
     'contact':False,
@@ -191,70 +192,70 @@ def bot(op):
         if op.type == 13:
             if mid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   cl.acceptGroupInvitation(op.param1)
                 else:
                   cl.rejectGroupInvitation(op.param1)
 		
             if Amid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   ki.acceptGroupInvitation(op.param1)
                 else:
                   ki.rejectGroupInvitation(op.param1)
 		
             if Bmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   kk.acceptGroupInvitation(op.param1)
                 else:
                   kk.rejectGroupInvitation(op.param1)
 		
             if Cmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   kc.acceptGroupInvitation(op.param1)
                 else:
                   kc.rejectGroupInvitation(op.param1)
 		
             if Dmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   ks.acceptGroupInvitation(op.param1)
                 else:
                   ks.rejectGroupInvitation(op.param1)
 		
             if Emid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   ka.acceptGroupInvitation(op.param1)
                 else:
                   ka.rejectGroupInvitation(op.param1)
 		
             if Fmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   kb.acceptGroupInvitation(op.param1)
                 else:
                   kb.rejectGroupInvitation(op.param1)
                 
             if Gmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   ko.acceptGroupInvitation(op.param1)
                 else:
                   ko.rejectGroupInvitation(op.param1)
                 
             if Hmid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   ke.acceptGroupInvitation(op.param1)
                 else:
                   ke.rejectGroupInvitation(op.param1)
 	
             if Imid in op.param3:
               if wait["autoJoin"] == True:
-                if op.param2 in Bots or admin:
+                if op.param2 in Bots or owner:
                   ku.acceptGroupInvitation(op.param1)
                 else:
                   ku.rejectGroupInvitation(op.param1)
