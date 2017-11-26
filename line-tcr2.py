@@ -582,7 +582,7 @@ def bot(op):
                     else:
                         wait["blacklist"][op.param2] = True
                         
-                if Hmid in op.param3:
+                if Imid in op.param3:
                     if op.param2 in Bots:
                         pass
                     try:
