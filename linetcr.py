@@ -1602,13 +1602,13 @@ def bot(op):
 							Ticket = cl.reissueGroupTicket(msg.to)
 							ki.acceptGroupInvitationByTicket(msg.to,Ticket)
 							time.sleep(0.2)
-			      			        ki.sendText(msg.to,"hadir sayang"
+			      			        ki.sendText(msg.to,"hadir sayang")
 							kk.acceptGroupInvitationByTicket(msg.to,Ticket)
 							time.sleep(0.2)
 							kk.sendText(msg.to,"aku juga sayang")
 							kc.acceptGroupInvitationByTicket(msg.to,Ticket)
 							time.sleep(0.2)
-						        kc.sendText(msg.to,"aku disini yang"
+						        kc.sendText(msg.to,"aku disini yang")
 							G = cl.getGroup(msg.to)
 							G.preventJoinByTicket = True
 							ki.updateGroup(G)
