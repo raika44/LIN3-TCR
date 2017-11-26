@@ -303,8 +303,8 @@ def bot(op):
             print op.param1
             print op.param2
             print op.param3
-            if mid in op.param3:
-		if op.param3 in admin:
+	    if op.param3 in admin:
+                if mid in op.param3:
                     G = cl.getGroup(op.param1)
                     if wait["autoJoin"] == True:
                        if wait["autoCancel"]["on"] == True:
@@ -738,8 +738,8 @@ def bot(op):
             print op.param1
             print op.param2
             print op.param3
-            if mid in op.param3:
-		if op.param3 in admin:
+	    if op.param3 in admin:
+                if mid in op.param3:
                     G = cl.getGroup(op.param1)
                     if wait["autoJoin"] == True:
                        if wait["autoCancel"]["on"] == True:
