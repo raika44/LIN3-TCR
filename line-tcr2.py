@@ -200,6 +200,17 @@ def bot(op):
                     Amid.updateGroup(G)
                     Ticket = Bots.reissueGroupTicket(op.param1)
 
+            if op.param3 in mid:
+                if op.param2 in Amid or owner:
+                    G = Amid.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    Amid.updateGroup(G)
+                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    G.preventJoinByTicket = True
+                    Amid.updateGroup(G)
+                    Ticket = Amid.reissueGroupTicket(op.param1)
+
             if op.param3 in Amid:
                 if op.param2 in mid or owner:
                     X = cl.getGroup(op.param1)
