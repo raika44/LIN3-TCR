@@ -28,7 +28,7 @@ kk = ki = kc
 
 ka = ks = ko
 
-kb = ke = ku
+kb = ku = ke
 
 print "login success"
 reload(sys)
