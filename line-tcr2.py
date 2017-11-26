@@ -319,14 +319,14 @@ def bot(op):
                     if wait["autoJoin"] == True:
                         if wait["autoCancel"]["on"] == True:
                             if len(G.members) <= wait["autoCancel"]["members"]:
-                                cl.rejectGroupInvitation(op.param1)
-                            else:
                                 cl.acceptGroupInvitation(op.param1)
+                            else:
+                                cl.rejecttGroupInvitation(op.param1)
                         else:
-                            cl.acceptGroupInvitation(op.param1)
+                            cl.rejectGroupInvitation(op.param1)
                     elif wait["autoCancel"]["on"] == True:
                         if len(G.members) <= wait["autoCancel"]["members"]:
-                           cl.rejectGroupInvitation(op.param1)
+                           cl.acceptGroupInvitation(op.param1)
                 else:
                     Inviter = op.param3.replace("",',')
                     InviterX = Inviter.split(",")
@@ -744,21 +744,19 @@ def bot(op):
                     else:
                         wait["blacklist"][op.param2] = True        
                     
-        if op.type == 13:
-            if mid in op.param3:
 	        if op.param2 in admin or Bots:
                     G = cl.getGroup(op.param1)
                     if wait["autoJoin"] == True:
                         if wait["autoCancel"]["on"] == True:
                             if len(G.members) <= wait["autoCancel"]["members"]:
-                                cl.rejectGroupInvitation(op.param1)
-                            else:
                                 cl.acceptGroupInvitation(op.param1)
+                            else:
+                                cl.rejecttGroupInvitation(op.param1)
                         else:
-                            cl.acceptGroupInvitation(op.param1)
+                            cl.rejectGroupInvitation(op.param1)
                     elif wait["autoCancel"]["on"] == True:
                         if len(G.members) <= wait["autoCancel"]["members"]:
-                           cl.rejectGroupInvitation(op.param1)
+                           cl.acceptGroupInvitation(op.param1)
                 else:
                     Inviter = op.param3.replace("",',')
                     InviterX = Inviter.split(",")
