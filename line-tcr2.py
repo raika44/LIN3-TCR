@@ -195,7 +195,8 @@ def bot(op):
                   cl.acceptGroupInvitation(op.param1)
                 else:
                   cl.rejectGroupInvitation(op.param1)
-              else:                
+              else: 
+		
             if Amid in op.param3:
               if wait["autoJoin"] == True:
                 if op.param2 in Bots or owner:
