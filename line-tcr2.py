@@ -195,7 +195,6 @@ def bot(op):
                   cl.acceptGroupInvitation(op.param1)
                 else:
                   cl.rejectGroupInvitation(op.param1)
-              else: 
 		
             if Amid in op.param3:
               if wait["autoJoin"] == True:
@@ -203,7 +202,6 @@ def bot(op):
                   ki.acceptGroupInvitation(op.param1)
                 else:
                   ki.rejectGroupInvitation(op.param1)
-              else:
                 
             if Gmid in op.param3:
               if wait["autoJoin"] == True:
@@ -211,15 +209,13 @@ def bot(op):
                   ko.acceptGroupInvitation(op.param1)
                 else:
                   ko.rejectGroupInvitation(op.param1)
-              else:
                 
             if imid in op.param3:
               if wait["autoJoin"] == True:
                 if op.param2 in Bots or owner:
                   ku.acceptGroupInvitation(op.param1)
                 else:
-                  ku.rejectGroupInvitation(op.param1)
-              else:    
+                  ku.rejectGroupInvitation(op.param1)    
                     
         #------Joined User Kick start------#
         if op.type == 17:
@@ -625,32 +621,7 @@ def bot(op):
                     if op.param2 in wait["whitelist"]:
                         pass
                     else:
-                        wait["blacklist"][op.param2] = True        
-                    
-        if op.type == 13:
-            if mid in op.param3:
-                G = cl.getGroup(op.param1)
-                if wait["autoJoin"] == True:
-                    if wait["autoCancel"]["on"] == True:
-                        if len(G.members) <= wait["autoCancel"]["members"]:
-                            cl.rejectGroupInvitation(op.param1)
-                        else:
-                            cl.acceptGroupInvitation(op.param1)
-                    else:
-                        cl.acceptGroupInvitation(op.param1)
-                elif wait["autoCancel"]["on"] == True:
-                    if len(G.members) <= wait["autoCancel"]["members"]:
-                        cl.rejectGroupInvitation(op.param1)
-            else:
-                Inviter = op.param3.replace("",',')
-                InviterX = Inviter.split(",")
-                matched_list = []
-                for tag in wait["blacklist"]:
-                    matched_list+=filter(lambda str: str == tag, InviterX)
-                if matched_list == []:
-                    pass
-                else:
-                    cl.cancelGroupInvitation(op.param1, matched_list)
+                        wait["blacklist"][op.param2] = True                            
                     
         if op.type == 22:
             if wait["leaveRoom"] == True:
