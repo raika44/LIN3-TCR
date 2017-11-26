@@ -78,7 +78,7 @@ helpMessage ="""!CommandMember!
 => Vk = Mengeluarkan 2 Anggora/Lebih Dari Grup
 => Cleanse = Membersihkan Grup
 ==================================================
-BOT : Kirisaki Chitoge
+BOT : TOBY
 SUPPORT BY : CYBER BOT CRIME
 Hanya Admin Yang Bisa Menggunakan Bot
 """
