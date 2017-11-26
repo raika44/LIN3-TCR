@@ -83,7 +83,6 @@ Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 """
 KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
 DEF=[ka,kb,ko,ke,ku]
-admin = admin.getProfile().mid
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -95,7 +94,7 @@ Gmid = ko.getProfile().mid
 Hmid = ke.getProfile().mid
 Imid = ku.getProfile().mid
 
-Bots=[admin,mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
 admin=["u5427d8047ab127f5e237eaedd1f0b93b"]
 creator=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
@@ -201,16 +200,16 @@ def bot(op):
                     Amid.updateGroup(G)
                     Ticket = admin.reissueGroupTicket(op.param1)
 			
-            if op.param3 in mid:
-                if op.param2 in Amid:
-                    G = Amid.getGroup(op.param1)
+            if op.param3 in admin:
+                if op.param2 in mid:
+                    G = admin.getGroup(op.param1)
                     G.preventJoinByTicket = False
-                    Amid.updateGroup(G)
-                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    admin.updateGroup(G)
+                    Ticket = admin.reissueGroupTicket(op.param1)
                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                     G.preventJoinByTicket = True
-                    Amid.updateGroup(G)
-                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    cl.updateGroup(G)
+                    Ticket = cl.reissueGroupTicket(op.param1)
 
             if op.param3 in Amid:
                 if op.param2 in mid:
