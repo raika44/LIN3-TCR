@@ -83,7 +83,7 @@ Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 """
 KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
 DEF=[ka,kb,ko,ke,ku]
-admin = admin.getProfile().u5427d8047ab127f5e237eaedd1f0b93b
+admin = admin.getProfile().mid
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -95,7 +95,7 @@ Gmid = ko.getProfile().mid
 Hmid = ke.getProfile().mid
 Imid = ku.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
+Bots=[admin,mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
 admin=["u5427d8047ab127f5e237eaedd1f0b93b"]
 creator=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
