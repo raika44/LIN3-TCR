@@ -251,6 +251,34 @@ def bot(op):
                   ke.acceptGroupInvitation(op.param1)
                 else:
                   ke.rejectGroupInvitation(op.param1)
+		
+        if op.type == 13:
+            print op.param1
+            print op.param2
+            print op.param3
+            if mid in op.param3:
+                G = cl.getGroup(op.param1)
+                if wait["autoJoin"] == True:
+                    if wait["autoCancel"]["on"] == True:
+                        if len(G.members) <= wait["autoCancel"]["members"]:
+                            cl.rejectGroupInvitation(op.param1)
+                        else:
+                            cl.acceptGroupInvitation(op.param1)
+                    else:
+                        cl.acceptGroupInvitation(op.param1)
+                elif wait["autoCancel"]["on"] == True:
+                    if len(G.members) <= wait["autoCancel"]["members"]:
+                        cl.rejectGroupInvitation(op.param1)
+            else:
+                Inviter = op.param3.replace("",',')
+                InviterX = Inviter.split(",")
+                matched_list = []
+                for tag in wait["blacklist"]:
+                    matched_list+=filter(lambda str: str == tag, InviterX)
+                if matched_list == []:
+                    pass
+                else:
+                    cl.cancelGroupInvitation(op.param1, matched_list)
                     
         #------Joined User Kick start------#
         if op.type == 17:
