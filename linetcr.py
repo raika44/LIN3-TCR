@@ -109,7 +109,7 @@ wait = {
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
-    "Protectgr":False
+    "Protectgr":False,
     "Protectguest":False,
     "Protectcancel":False,
     "protectionOn":True,
