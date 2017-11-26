@@ -1085,7 +1085,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Protect Group Off")
                     else:
-                        cl.sendText(msg.to,"done"
+                        cl.sendText(msg.to,"done")
             elif msg.text in ["Qr on","qr on"]:
               if msg.from_ in admin:
                 if wait["ProtectQR"] == True:
