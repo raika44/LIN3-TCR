@@ -2227,7 +2227,7 @@ def bot(op):
 #-----------------------------------------------
             elif msg.text in ["Creator"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u5427d8047ab127f5e237eaedd1f0b93b"}
+					msg.contentMetadata = {'mid': "u1fa69c99e0aa30b9977be7639fb76cd2"}
 					cl.sendMessage(msg)
 #-----------------------------------------------
 					
