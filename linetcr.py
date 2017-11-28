@@ -168,8 +168,8 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
      	       cl.sendText(op.param1,str(wait["welcome"]))
 	else:
 	    pass
-     except:
-            pass
+    except:
+        pass
     		
 
 def bot(op):
