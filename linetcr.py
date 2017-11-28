@@ -109,7 +109,7 @@ wait = {
     "comment":"cie ngeadd yaa makasihh",
     "commentOn":True,
     "commentBlack":{},
-    "welcome":"m"
+    "welcome":"m",
     "wblack":False,
     "dblack":False,
     "clock":False,
