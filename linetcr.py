@@ -173,6 +173,8 @@ def NOTIFIED_ACCEPT_MESSAGE(op):
 		pass
 	else:
 	    pass
+    except:
+        pass
 
 def bot(op):
     try:
