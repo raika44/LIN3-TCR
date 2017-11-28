@@ -274,7 +274,7 @@ def bot(op):
            else:
                pass
 
-        if op.type == 19
+        if op.type == 19:
           if op.param2 in Bots:
                 pass
             try:
