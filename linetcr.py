@@ -165,10 +165,10 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
      	      if Name in wait2['readMember'][op.param1]:
      	      	pass
      	      	cl.sendText(op.param1,str(wait["welcome"]))
-     	    else:
-                pass
-       except:
-           pass
+     	     else:
+                 pass
+        except:
+            pass
     		
 
 def bot(op):
