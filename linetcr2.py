@@ -191,15 +191,10 @@ def bot(op):
         if op.type == 13:
             if op.param3 in mid:
                 if op.param2 in Bots or owner:
-                    G = Bots.getGroup(op.param1)
-                    G.preventJoinByTicket = False
-                    Bots.updateGroup(G)
-                    Ticket = Bots.reissueGroupTicket(op.param1)
-                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    G.preventJoinByTicket = True
-                    Bots.updateGroup(G)
-                    Ticket = Bots.reissueGroupTicket(op.param1)
-
+                    cl.acceptGroupInvitation(op.param1)
+                else:
+                    cl.rejectGroupInvitation(op.param1)
+		
             if op.param3 in Amid:
                 if op.param2 in Bots or owner:
                     X = cl.getGroup(op.param1)
