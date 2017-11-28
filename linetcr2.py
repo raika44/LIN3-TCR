@@ -95,8 +95,7 @@ Hmid = ke.getProfile().mid
 Imid = ku.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
-admin=["u5427d8047ab127f5e237eaedd1f0b93b","u1fa69c99e0aa30b9977be7639fb76cd2"]
-owner=["u5427d8047ab127f5e237eaedd1f0b93b"]
+admin=["u5427d8047ab127f5e237eaedd1f0b93b"]
 creator=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
     'contact':True,
