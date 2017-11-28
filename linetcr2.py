@@ -81,7 +81,7 @@ Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 [No Joinned]
 -- Joinn on/off
 """
-KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku,admin]
+KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
 DEF=[ka,ki,kk,ks,kb,ko,ke,kc,ku]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
@@ -194,7 +194,7 @@ def bot(op):
                     G = random.choice(KAC).getGroup(op.param1)
                     G.preventJoinByTicket = False
                     random.choice(KAC).updateGroup(G)
-                    Ticket = Bots.reissueGroupTicket(op.param1)
+                    Ticket = random.choice(KAC).reissueGroupTicket(op.param1)
                     random.choice(KAC).acceptGroupInvitationByTicket(op.param1,Ticket)
                     G.preventJoinByTicket = True
                     random.choice(KAC).updateGroup(G)
