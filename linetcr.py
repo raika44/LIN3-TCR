@@ -157,20 +157,18 @@ def NOTIFIED_READ_MESSAGE(op):
     except:
         pass
 
-def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
-    #print op
+
+def NOTIFIED_ACCEPT_MESSAGE(op):
     try:
-        if op.param1 in wait2['readpoint']:
-     	    name = cl.getcontact(op.param2).displayName
-     	    if Name in wait2['readMember'][op.param1]:
-     	       pass
-	    else:
-     	       cl.sendText(op.param1,str(wait["welcome"]))
-	else:
-	    pass
-    except:
-        pass
-    		
+        if op.type == 0:
+            return
+        if op.type == 4:
+            if wait2["readPoint"]:
+                cl.getContact(op.param1)
+                if (wait["welcome"] in [""," ","\n",None]):
+                    pass
+                else:
+                    cl.sendText(op.param1,str(wait["welcome"]))
 
 def bot(op):
     try:
