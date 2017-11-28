@@ -166,7 +166,9 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
      	       pass
 	    else:
      	       cl.sendText(op.param1,str(wait["welcome"]))
-        except:
+	else:
+	    pass
+     except:
             pass
     		
 
