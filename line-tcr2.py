@@ -293,6 +293,8 @@ def bot(op):
               time.sleep(0.01)
               ks.acceptGroupInvitationByTicket(op.param1,Ticket)
               time.sleep(0.01)
+              ke.acceptGroupInvitationByTicket(op.param1,Ticket)
+              time.sleep(0.01)
               G.preventJoinByTicket = True
               cl.updateGroup(G)
               wait["blacklist"][op.param2] = True
@@ -311,6 +313,8 @@ def bot(op):
               kc.acceptGroupInvitationByTicket(op.param1,Ticket)
               time.sleep(0.01)
               ks.acceptGroupInvitationByTicket(op.param1,Ticket)
+              time.sleep(0.01)
+              ke.acceptGroupInvitationByTicket(op.param1,Ticket)
               time.sleep(0.01)
               G.preventJoinByTicket = True
               random.choice(KAC).updateGroup(G)
