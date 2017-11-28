@@ -164,7 +164,7 @@ def NOTIFIED_ACCEPT_MESSAGE(op):
         if op.type == 0:
             return
         if op.type == 4:
-            if wait2["readMember"]:
+            if wait2["autoJoin"] == True:
                 cl.getContact(op.param1)
                 if (wait["welcome"] in [""," ","\n",None]):
                     pass
