@@ -94,7 +94,7 @@ Gmid = ko.getProfile().mid
 Hmid = ke.getProfile().mid
 Imid = ku.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b","u1fa69c99e0aa30b9977be7639fb76cd2"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,"u5427d8047ab127f5e237eaedd1f0b93b"]
 admin=["u5427d8047ab127f5e237eaedd1f0b93b","u1fa69c99e0aa30b9977be7639fb76cd2"]
 creator=["u5427d8047ab127f5e237eaedd1f0b93b"]
 wait = {
@@ -191,9 +191,14 @@ def bot(op):
         if op.type == 13:
             if op.param3 in mid:
                 if op.param2 in Bots or owner:
-                    cl.acceptGroupInvitation(op.param1)
-                else:
-                    cl.rejectGroupInvitation(op.param1)
+                    G = Amid.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    Amid.updateGroup(G)
+                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    G.preventJoinByTicket = True
+                    Amid.updateGroup(G)
+                    Ticket = Amid.reissueGroupTicket(op.param1)
 		
             if op.param3 in Amid:
                 if op.param2 in Bots or owner:
