@@ -113,7 +113,7 @@ wait = {
     "dblack":False,
     "clock":False,
     "cName":" ",
-    "blacklist":True,
+    "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
     "Protectgr":False,
