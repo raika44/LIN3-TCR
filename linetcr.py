@@ -162,11 +162,11 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
     try:
         if op.param1 in wait2['readpoint']:
      	    name = cl.getcontact(op.param2).displayName
-     	      if Name in wait2['readMember'][op.param1]:
-     	      	pass
+     	    if Name in wait2['readMember'][op.param1]:
+     	       pass
      	      	cl.sendText(op.param1,str(wait["welcome"]))
-     	     else:
-                 pass
+     	    else:
+                pass
         except:
             pass
     		
