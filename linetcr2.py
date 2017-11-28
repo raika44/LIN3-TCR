@@ -190,15 +190,15 @@ def bot(op):
 
         if op.type == 13:
             if op.param3 in mid:
-                if op.param2 in Amid:
-                    G = Amid.getGroup(op.param1)
+                if op.param2 in KAC:
+                    G = random.choice(KAC).getGroup(op.param1)
                     G.preventJoinByTicket = False
-                    Amid.updateGroup(G)
-                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    random.choice(KAC).updateGroup(G)
+                    Ticket = random.choice(KAC).reissueGroupTicket(op.param1)
                     cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                     G.preventJoinByTicket = True
-                    Amid.updateGroup(G)
-                    Ticket = Amid.reissueGroupTicket(op.param1)
+                    random.choice(KAC).updateGroup(G)
+                    Ticket = random.choice(KAC).reissueGroupTicket(op.param1)
 		
             if op.param3 in Amid:
                 if op.param2 in mid:
