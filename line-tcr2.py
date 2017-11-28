@@ -317,8 +317,7 @@ def bot(op):
           if op.param2 in Bots:
             pass
           if op.param2 in admin:
-              random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
-              cl.inviteIntoGroup(op.param1,admin)
+	    pass
           else:
             try:
               G = cl.getGroup(op.param1)
