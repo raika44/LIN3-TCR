@@ -22,7 +22,7 @@ kb.login(token="EnH35WQyaOLcZsHmZns2.Zm4gXz6MY8xdnV92S49yaG.xW+zBNcyqcVAIfVtWovH
 ke = LINETCR.LINE()
 ke.login(token="En8VVfFSRLQCDrZkYq34.AbZfX80renrInaDEsR0v1a.s62EO6keurG1/tmN3GEuq2IVk4/Rp1xNWTRqRtvZlYc=")
 
-kki = cl
+ki = cl
 
 ka = ks = kc
 
