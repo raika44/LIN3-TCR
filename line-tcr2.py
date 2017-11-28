@@ -277,7 +277,7 @@ def bot(op):
         if op.type == 19:
           if op.param2 in Bots:
                 pass
-            try:
+          try:
               G = cl.getGroup(op.param1)
               cl.kickoutFromGroup(op.param1,[op.param2])
               G.preventJoinByTicket = False
@@ -296,7 +296,7 @@ def bot(op):
               G.preventJoinByTicket = True
               cl.updateGroup(G)
               wait["blacklist"][op.param2] = True
-            except:
+          except:
               G = random.choice(KAC).getGroup(op.param1) #Sanji Bertindak
               random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
               G.preventJoinByTicket = False
