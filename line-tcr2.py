@@ -317,14 +317,15 @@ def bot(op):
           if op.param2 in Bots:
             pass
           if op.param2 in admin:
-            pass
+              random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+              cl.inviteIntoGroup(op.param1,admin)
           else:
             try:
               G = cl.getGroup(op.param1)
               cl.kickoutFromGroup(op.param1,[op.param2])
               G.preventJoinByTicket = False
               cl.updateGroup(G)
-              Ticket = cl.reissueGroupTicket(op.param1)
+              Ti = cl.reissueGroupTicket(op.param1)
               cl.acceptGroupInvitationByTicket(op.param1,Ticket)
               time.sleep(0.01)
               ki.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -343,7 +344,7 @@ def bot(op):
               random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
               G.preventJoinByTicket = False
               random.choice(KAC).updateGroup(G)
-              Ticket = random.choice(KAC).reissueGroupTicket(op.param1)
+              Ti = random.choice(KAC).reissueGroupTicket(op.param1)
               cl.acceptGroupInvitationByTicket(op.param1,Ticket)
               time.sleep(0.01)
               ki.acceptGroupInvitationByTicket(op.param1,Ticket)
