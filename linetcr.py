@@ -169,6 +169,10 @@ def NOTIFIED_ACCEPT_MESSAGE(op):
                     pass
                 else:
                     cl.sendText(op.param1,str(wait["welcome"]))
+	    else:
+		pass
+	else:
+	    pass
 
 def bot(op):
     try:
