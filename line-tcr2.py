@@ -12,15 +12,19 @@ import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
 cl.login(token="EnHZ13lS8hRHKLhetqrc.eoXp0xK1vqkdnL9Q78yCpa.mM3xj1D0c8y4s7PX53fnwFdljjHzp8WrDtu5g2fj1bA=")
+cl.loginResult()
 
 kc = LINETCR.LINE()
 kc.login(token="En4aaHlzzXHaZrO74Sqb.672la4CfyuJmLCgFJdKosW.NjB/NCDLjL7uHp57WsQj7aTuwYZU3bcC55m8i0ggGk8=")
+kc.loginResult()
 
 kb = LINETCR.LINE()
 kb.login(token="EnH35WQyaOLcZsHmZns2.Zm4gXz6MY8xdnV92S49yaG.xW+zBNcyqcVAIfVtWovHuFOerXkMXsS01er3E39OmF4=")
+kb.loginResult()
 
 ke = LINETCR.LINE()
 ke.login(token="En8VVfFSRLQCDrZkYq34.AbZfX80renrInaDEsR0v1a.s62EO6keurG1/tmN3GEuq2IVk4/Rp1xNWTRqRtvZlYc=")
+ke.loginResult()
 
 kk = ki = cl
 
@@ -2250,11 +2254,11 @@ def bot(op):
                 ki.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
-#-----------------------------------------------#-------------------------------- WELCOME -----------------------------------
+#-----------------------------------------------
+#-------------------------------- WELCOME -----------------------------------
             if msg.text.lower() in ["wc","welcome"]:
                 ginfo = cl.getGroup(msg.to)
                 cl.sendText(msg.to,"Selamat Datang Di " + str(ginfo.name))
-            elif msg.text in ["Salam jones"]:
 #-----------------------------------------------
             elif msg.text in ["Creator"]:
 					msg.contentType = 13
