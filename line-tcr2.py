@@ -2278,15 +2278,15 @@ def bot(op):
                 ko.sendText(msg.to,"...............................")
                 ke.sendText(msg.to,"Complete 100%")
       #-------------Fungsi Respon Finish---------------------#
-#------------------------------- Kerang Ajaib -------------------------------
+#------------------------------- Kerang Ajaib -------------------------------#
             elif "/apakah " in msg.text.lower():
                 apk = msg.text.replace("/apakah ","")
                 rnd = ['Ya','Tidak']
                 p = random.choice(rnd)
                 cl.sendText(msg.to,p)
                 print "[Command] Kerang Ajaib"
-#----------------------------------------------------------------------------
-------------------------------- COVER BY TAG -------------------------------
+----------------------------------------------------------------------------
+#------------------------------- COVER BY TAG -------------------------------#
             elif "cover @" in msg.text:
                 if msg.toType == 2:
                     cover = msg.text.replace("cover @","")
