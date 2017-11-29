@@ -190,97 +190,116 @@ def bot(op):
 
 
         if op.type == 13:
-            if mid in op.param3:
-              if wait["autoJoin"] == True:
+            if op.param3 in mid:
                 if op.param2 in Bots or owner:
-                  cl.acceptGroupInvitation(op.param1)
-                else:
-                  cl.rejectGroupInvitation(op.param1)
-		
-            if Amid in op.param3:
-              if wait["autoJoin"] == True:
+                    G = ki.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    ki.updateGroup(G)
+                    Ticket = ki.reissueGroupTicket(op.param1)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    G.preventJoinByTicket = True
+                    ki.updateGroup(G)
+                    Ticket = li.reissueGroupTicket(op.param1)
+
+            if op.param3 in Amid:
                 if op.param2 in Bots or owner:
-                  ki.acceptGroupInvitation(op.param1)
-                else:
-                  ki.rejectGroupInvitation(op.param1)
-		
-            if Bmid in op.param3:
-              if wait["autoJoin"] == True:
+                    X = cl.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    cl.updateGroup(X)
+                    Ti = cl.reissueGroupTicket(op.param1)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ki.updateGroup(X)
+                    Ti = ki.reissueGroupTicket(op.param1)
+
+            if op.param3 in Bmid:
                 if op.param2 in Bots or owner:
-                  kk.acceptGroupInvitation(op.param1)
-                else:
-                  kk.rejectGroupInvitation(op.param1)
-		
-            if Cmid in op.param3:
-              if wait["autoJoin"] == True:
+                    X = ki.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    ki.updateGroup(X)
+                    Ti = ki.reissueGroupTicket(op.param1)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    kk.updateGroup(X)
+                    Ti = kk.reissueGroupTicket(op.param1)
+
+            if op.param3 in Cmid:
                 if op.param2 in Bots or owner:
-                  kc.acceptGroupInvitation(op.param1)
-                else:
-                  kc.rejectGroupInvitation(op.param1)
-		
-            if Dmid in op.param3:
-              if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
-                  ks.acceptGroupInvitation(op.param1)
-                else:
-                  ks.rejectGroupInvitation(op.param1)
-		
-            if Emid in op.param3:
-              if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
-                  ka.acceptGroupInvitation(op.param1)
-                else:
-                  ka.rejectGroupInvitation(op.param1)
-		
-            if Fmid in op.param3:
-              if wait["autoJoin"] == True:
-                if op.param2 in Bots or owner:
-                  kb.acceptGroupInvitation(op.param1)
-                else:
-                  kb.rejectGroupInvitation(op.param1)
+                    X = kk.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    kk.updateGroup(X)
+                    Ti = kk.reissueGroupTicket(op.param1)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    kc.updateGroup(X)
+                    Ti = kc.reissueGroupTicket(op.param1)
                 
-            if Gmid in op.param3:
-              if wait["autoJoin"] == True:
+            if op.param3 in Dmid:
                 if op.param2 in Bots or owner:
-                  ko.acceptGroupInvitation(op.param1)
-                else:
-                  ko.rejectGroupInvitation(op.param1)
+                    X = kc.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    kc.updateGroup(X)
+                    Ti = kc.reissueGroupTicket(op.param1)
+                    ks.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ks.updateGroup(X)
+                    Ti = ks.reissueGroupTicket(op.param1)
                 
-            if Hmid in op.param3:
-              if wait["autoJoin"] == True:
+            if op.param3 in Emid:
                 if op.param2 in Bots or owner:
-                  ke.acceptGroupInvitation(op.param1)
-                else:
-                  ke.rejectGroupInvitation(op.param1)
+                    X = ks.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    ks.updateGroup(X)
+                    Ti = ks.reissueGroupTicket(op.param1)
+                    ka.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ka.updateGroup(X)
+                    Ti = ka.reissueGroupTicket(op.param1)
+                
+            if op.param3 in Fmid:
+                if op.param2 in Bots or owner:
+                    X = ka.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    ka.updateGroup(X)
+                    Ti = ka.reissueGroupTicket(op.param1)
+                    kb.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    kb.updateGroup(X)
+                    Ti = kb.reissueGroupTicket(op.param1)
+                
+            if op.param3 in Gmid:
+                if op.param2 in Bots or owner:
+                    X = kb.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    kb.updateGroup(X)
+                    Ti = kb.reissueGroupTicket(op.param1)
+                    ko.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ko.updateGroup(X)
+                    Ti = ko.reissueGroupTicket(op.param1)
+                
+            if op.param3 in Hmid:
+                if op.param2 in Bots or owner:
+                    X = ko.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    ko.updateGroup(X)
+                    Ti = ko.reissueGroupTicket(op.param1)
+                    ke.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ke.updateGroup(X)
+                    Ti = ke.reissueGroupTicket(op.param1)
                     
-        if op.type == 13:
-            print op.param1
-            print op.param2
-            print op.param3
-            if mid in op.param3:
-                G = cl.getGroup(op.param1)
-                if wait["autoJoin"] == True:
-                    if wait["autoCancel"]["on"] == True:
-                        if len(G.members) <= wait["autoCancel"]["members"]:
-                            cl.rejectGroupInvitation(op.param1)
-                        else:
-                            cl.acceptGroupInvitation(op.param1)
-                    else:
-                        cl.acceptGroupInvitation(op.param1)
-                elif wait["autoCancel"]["on"] == True:
-                    if len(G.members) <= wait["autoCancel"]["members"]:
-                        cl.rejectGroupInvitation(op.param1)
-            else:
-                Inviter = op.param3.replace("",',')
-                InviterX = Inviter.split(",")
-                matched_list = []
-                for tag in wait["blacklist"]:
-                    matched_list+=filter(lambda str: str == tag, InviterX)
-                if matched_list == []:
-                    pass
-                else:
-                    cl.cancelGroupInvitation(op.param1, matched_list)
-		
+            if op.param3 in Imid:
+                if op.param2 in Bots or owner:
+                    X = cl.getGroup(op.param1)
+                    X.preventJoinByTicket = False
+                    cl.updateGroup(X)
+                    Ti = cl.reissueGroupTicket(op.param1)
+                    ku.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    cl.updateGroup(X)
+                    Ti = cl.reissueGroupTicket(op.param1) 
+                    
         #------Joined User Kick start------#
         if op.type == 17:
            if wait["Protectjoin"] == True:
@@ -2231,8 +2250,11 @@ def bot(op):
                 ki.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
-#-----------------------------------------------
-
+#-----------------------------------------------#-------------------------------- WELCOME -----------------------------------
+            if msg.text.lower() in ["wc","welcome"]:
+                ginfo = cl.getGroup(msg.to)
+                cl.sendText(msg.to,"Selamat Datang Di " + str(ginfo.name))
+            elif msg.text in ["Salam jones"]:
 #-----------------------------------------------
             elif msg.text in ["Creator"]:
 					msg.contentType = 13
@@ -2252,7 +2274,181 @@ def bot(op):
                 ko.sendText(msg.to,"...............................")
                 ke.sendText(msg.to,"Complete 100%")
       #-------------Fungsi Respon Finish---------------------#
+#------------------------------- Kerang Ajaib -------------------------------
+            elif "/apakah " in msg.text.lower():
+                apk = msg.text.replace("/apakah ","")
+                rnd = ['Ya','Tidak']
+                p = random.choice(rnd)
+                cl.sendText(msg.to,p)
+                print "[Command] Kerang Ajaib"
+#----------------------------------------------------------------------------
+------------------------------- COVER BY TAG -------------------------------
+            elif "cover @" in msg.text:
+                if msg.toType == 2:
+                    cover = msg.text.replace("cover @","")
+                    _nametarget = cover.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Not found")
+                    else:
+                        for target in targets:
+                            try:
+                                h = cl.channel.getHome(target)
+                                objId = h["result"]["homeInfo"]["objectId"]
+                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
+                            except Exception as error:
+                                print error
+                                cl.sendText(msg.to,"Upload image failed.")
 
+            elif "Cover @" in msg.text:
+                if msg.toType == 2:
+                    cover = msg.text.replace("Cover @","")
+                    _nametarget = cover.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Not found")
+                    else:
+                        for target in targets:
+                            try:
+                                h = cl.channel.getHome(target)
+                                objId = h["result"]["homeInfo"]["objectId"]
+                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/myhome/c/download.nhn?userid=" + target + "&oid=" + objId)
+                            except Exception as error:
+                                print error
+                                cl.sendText(msg.to,"Upload image failed.")
+#----------------------------------------------------------------------------
+#-------------------------------- PP BY TAG ---------------------------------
+            elif "pp @" in msg.text:
+                if msg.toType == 2:
+                    cover = msg.text.replace("pp @","")
+                    _nametarget = cover.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Not found")
+                    else:
+                        for target in targets:
+                            try:
+                                h = cl.getContact(target)
+                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+                            except Exception as error:
+                                print error
+                                cl.sendText(msg.to,"Upload image failed.")
+
+            elif "Pp @" in msg.text:
+                if msg.toType == 2:
+                    cover = msg.text.replace("Pp @","")
+                    _nametarget = cover.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Not found")
+                    else:
+                        for target in targets:
+                            try:
+                                h = cl.getContact(target)
+                                cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+                            except Exception as error:
+                                print error
+                                cl.sendText(msg.to,"Upload image failed.")
+#----------------------------------------------------------------------------
+#---------------------------------- SONG ------------------------------------
+            elif "/lirik " in msg.text.lower():
+                songname = msg.text.replace("/lirik ","")
+                params = {"songname":songname}
+                r = requests.get('https://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
+                data = r.text
+                data = json.loads(data)
+                for song in data:
+                    cl.sendText(msg.to,song[5])
+                    print "[Command] Lirik"
+
+            elif "/lagu " in msg.text.lower():
+                songname = msg.text.replace("/lagu ","")
+                params = {"songname":songname}
+                r = requests.get('https://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
+                data = r.text
+                data = json.loads(data)
+                for song in data:
+                    cl.sendText(msg.to,"Judul : " + song[0] + "\nDurasi : " + song[1])
+                    cl.sendAudioWithURL(msg.to,song[3])
+                    print "[Command] Lagu"
+#----------------------------------------------------------------------------
+#--------------------------------- INSTAGRAM --------------------------------
+            elif "/ig " in msg.text.lower():
+                arg = msg.text.split(' ');
+                nk0 = msg.text.replace("/ig ","")
+                nk1 = nk0.rstrip('  ')
+                if len(arg) > 1:
+                    proc = subprocess.Popen('curl -s https://www.instagram.com/'+nk1+'/?__a=1',shell=True, stdout=subprocess.PIPE)
+                    x = proc.communicate()[0]
+                    parsed_json = json.loads(x)
+                    if(len(x) > 10):
+                        username = (parsed_json['user']['username'])
+                        fullname = (parsed_json['user']['full_name'])
+                        followers = (parsed_json['user']['followed_by']['count'])
+                        following = (parsed_json['user']['follows']['count'])
+                        media = (parsed_json['user']['media']['count'])
+                        bio = (parsed_json['user']['biography'])
+                        url = (parsed_json['user']['external_url'])
+                        cl.sendText(msg.to,"Profile "+username+"\n\nUsername : "+username+"\nFull Name : "+fullname+"\nFollowers : "+str(followers)+"\nFollowing : "+str(following))
+                        print '[Command] Instagram'
+                    else:
+                        cl.sendText(msg.to,"Not Found...")
+                else:
+                    cl.sendText(msg.to,"Contoh /ig hairu.ones")
+#----------------------------------------------------------------------------
+#--------------------------------- YOUTUBE ----------------------------------
+            elif "/youtube " in msg.text:
+                query = msg.text.replace("/youtube ","")
+                with requests.session() as s:
+                    s.headers['user-agent'] = 'Mozilla/5.0'
+                    url = 'http://www.youtube.com/results'
+                    params = {'search_query': query}
+                    r = s.get(url, params=params)
+                    soup = BeautifulSoup(r.content, 'html5lib')
+                    hasil = ""
+                    for a in soup.select('.yt-lockup-title > a[title]'):
+                        if '&list=' not in a['href']:
+                            hasil += ''.join((a['title'],'\nhttp://www.youtube.com' + a['href'],'\n\n'))
+                    cl.sendText(msg.to,hasil)
+                    print '[Command] Youtube Search'
+#----------------------------------------------------------------------------
+#--------------------------------- TRANSLATE --------------------------------
+            elif "/translate-en " in msg.text:
+                txt = msg.text.replace("/translate-en ","")
+                try:
+                    gs = goslate.Goslate()
+                    trs = gs.translate(txt,'en')
+                    cl.sendText(msg.to,trs)
+                    print '[Command] Translate EN'
+                except:
+                    cl.sendText(msg.to,'Error.')
+
+            elif "/translate-id " in msg.text:
+                txt = msg.text.replace("/translate-en ","")
+                try:
+                    gs = goslate.Goslate()
+                    trs = gs.translate(txt,'id')
+                    cl.sendText(msg.to,trs)
+                    print '[Command] Translate ID'
+                except:
+                    cl.sendText(msg.to,'Error.')
+#----------------------------------------------------------------------------
       #-------------Fungsi Balesan Respon Start---------------------#
             elif msg.text in ["Ini Apa","ini apa","Apaan Ini","apaan ini"]:
                 ki.sendText(msg.to,"Ya gitu deh intinya mah 􀨁􀅴questioning􏿿")
