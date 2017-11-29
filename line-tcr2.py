@@ -1803,7 +1803,45 @@ def bot(op):
                 else:
                     wait["cName"] = n
                     cl.sendText(msg.to,"changed to\n\n" + n)
-         #-------------Fungsi Change Clock Finish-----------------#           
+         #-------------Fungsi Change Clock Finish-----------------#  
+#------------------------------- CHECK SIDER --------------------------------
+            if msg.text.lower() in ["/set"]:
+                if msg.toType == 2:
+                    cl.sendText(msg.to, "Sini Muncul")
+                    try:
+                        del wait2['readPoint'][msg.to]
+                        del wait2['readMember'][msg.to]
+                    except:
+                        pass
+                    wait2['readPoint'][msg.to] = msg.id
+                    wait2['readMember'][msg.to] = ""
+                    wait2['setTime'][msg.to] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M:%S')
+                    wait2['ROM'][msg.to] = {}
+                    print "[Command] Set"
+
+            if msg.text.lower() in ["/check"]:
+                if msg.toType == 2:
+                    if msg.to in wait2['readPoint']:
+                        if wait2["ROM"][msg.to].items() == []:
+                            chiya = ""
+                        else:
+                            chiya = ""
+                            for rom in wait2["ROM"][msg.to].items():
+                                print "[Command] Check"
+                                chiya += rom[1] + "\n"
+                        cl.sendText(msg.to, "✔ Read : %s\n\n✖ Sider :\n%s\nPoint creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        try:
+                            del wait2['readPoint'][msg.to]
+                            del wait2['readMember'][msg.to]
+                        except:
+                            pass
+                        wait2['readPoint'][msg.to] = msg.id
+                        wait2['readMember'][msg.to] = ""
+                        wait2['setTime'][msg.to] = datetime.datetime.today().strftime('%Y-%m-%d %H:%M:%S')
+                        wait2['ROM'][msg.to] = {}
+                        print "[Command] Set"
+                    else:
+                        cl.sendText(msg.to,"Read point tidak tersedia, Silahkan ketik /set untuk membuat Read point.")
         
          #-------------Fungsi Jam Update Start---------------------#            
             elif msg.text in ["Jam Update"]:
