@@ -58,6 +58,9 @@ helpMessage =""" Menu􀔃􀄆red check mark􏿿
 [Set View] Cek Privasi Group
 [Open Url]  Membuka Url Group
 [Close Url] Menutup Url Group
+[Cover @]
+[Pp @]
+[/lagu,/lirik,/ig,/youtube]
 
 􀔃􀅕red arrow right􏿿 Command Private
 [Admin add @] tambah admin
@@ -2317,8 +2320,8 @@ def bot(op):
                 ke.sendText(msg.to,"Complete 100%")
       #-------------Fungsi Respon Finish---------------------#
 #------------------------------- Kerang Ajaib -------------------------------#
-            elif "/apakah " in msg.text.lower():
-                apk = msg.text.replace("/apakah ","")
+            elif "Apakah " in msg.text.lower():
+                apk = msg.text.replace("Apakah ","")
                 rnd = ['Ya','Tidak']
                 p = random.choice(rnd)
                 cl.sendText(msg.to,p)
