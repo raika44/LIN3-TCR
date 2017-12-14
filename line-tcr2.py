@@ -38,44 +38,288 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Menu􀔃􀄆red check mark􏿿
+helpMessage= """\n
 
-􀔃􀅕red arrow right􏿿 Command Public
-[Me]       Cek Akun Sendiri
-[My mid]   Cek Akun Mid
-[Bot?]     Cek Akun Bot
-[Id Group] Cek Id Group
-[Ginfo]    Group Info
-[Mid RA]   Cek All mid Bot
-[RA 1/2/3/4] Cek Mid Bot
-[Respon]   Cek Respon Bot
-[Speedbot] Cek Kecepatan Bot
-[Up]       Fungsi Spam Chat
-[Tagall,kuchiyose no jutsu]   Mention Semua User
-[Banlist]  Cek List Akun Banned
-[Gn namagroup] Ganti Nama Group
-[Cancel] Cancel User Masuk Group
-[Set View] Cek Privasi Group
-[Open Url]  Membuka Url Group
-[Close Url] Menutup Url Group
-[Cover @]
-[Pp @]
-[/lagu,/lirik,/ig,/youtube]
+▂▃▅▇█▓▒░۩H̸͟͞e̸͟͞l̸͟͞p̸͟͞ ̸͟͞۩░▒▓█▇▅▃▂
+═╬════════►∆∆
+   E̸͟͞d̸͟͞i̸͟͞t̸͟͞e̸͟͞d̸͟͞.       
+═╬════════► 
+🔘 My name    :  |╬|
+🔘 Bot2 rename:  |╬|
+🔘 Bot3 rename:  |╬|
+🔘 Bot4 rename:  |╬|
+🔘 Bot5 rename:  |╬|
+🔘 Bot6 rename:  |╬|
+🔘 All rename:   |╬|
+🔘 Allbio:       |╬|
+🔘 My clone   @  |╬|
+🔘 Bot2 clone @  |╬|
+🔘 Bot3 clone @  |╬|
+🔘 Bot4 clone @  |╬|
+🔘 Bot5 clone @  |╬|
+🔘 Bot6 clone @  |╬|
+🔘 Comment:      |╬|
+🔘 Message:      |╬|
+🔘 Bot1-6 backup |╬|
+🔘 Bot1-6 backup |╬|
+🔘 Group name:   |╬|
+═╬════════►∆∆
+   🔓D̸͟͞e̸͟͞m̸͟͞o̸͟͞t̸͟͞e̸͟͞d̸͟͞.🔓
+═╬════════►
+|╬| Admin on @
+|╬| Expel on @
+|╬| Expelal
+═╬════════►
+   📷S̸͟͞T̸͟͞E̸͟͞A̸͟͞L̸͟͞I̸͟͞N̸͟͞G̸͟͞📷
+═╬════════►
+|╬| Steal
+|╬| Steal name    @
+|╬| Steal Bio     @
+|╬| Steal status  @
+|╬| Steal mid     @
+|╬| Steal contact @
+|╬| Steal cover   @
+|╬| Steal pict    @
+|╬| Steal group pict
+|╬| Midpict:   [mid]
+|╬| Pict group [name]
+|╬| My pict
+|╬| My cover
+|╬| My name
+|╬| My bio
+|╬| Pap set:
+|╬| Pap
+|╬| Image      [Text]
+═╬════════►
+   🔐S̸͟͞E̸͟͞C̸͟͞U̸͟͞R̸͟͞Y̸͟͞I̸͟͞T̸͟͞Y̸͟͞🔐
+═╬════════►
+|╬| Protect:low
+|╬| Protect:hight
+═╬════════►
+   🚮L̸͟͞I̸͟͞S̸͟͞T̸͟͞ B̸͟͞A̸͟͞N̸͟͞N̸͟͞E̸͟͞D̸͟͞🚮
+═╬════════►
+|╬| Ban            @
+|╬| Unban          @
+|╬| Banned
+|╬| Unbanned
+|╬| Ban repeat     @
+|╬| Add friend     @
+|╬| Clear banlist
+═╬════════►
+   📲i̲̅n̲̅v̲̅i̲̅t̲̅a̲̅t̲̅i̲̅o̲̅n̲̅📲
+═╬════════►
+|╬| Invite:[mid]
+|╬| Invite user[contact]
+|╬| Invite me
+|╬| Team @join
+═╬════════►
+   📴L̸͟͞E̸͟͞A̸͟͞V̸͟͞E̸͟͞ G̸͟͞R̸͟͞O̸͟͞U̸͟͞P̸͟͞📴
+═╬════════►
+|╬| Bot2   @bye
+|╬| Bot3   @bye
+|╬| Bot4   @bye
+|╬| Bot5   @bye
+|╬| Bot6   @bye
+|╬| Team   @bye
+|╬| Center @bye
+|╬| Bye allgroups[own]
+═╬════════►
+   🔫A̸͟͞U̸͟͞T̸͟͞O̸͟͞ S̸͟͞E̸͟͞T̸͟͞ B̸͟͞O̸͟͞T̸͟͞🔫
+═╬════════►
+|╬| Auto reinvite:on/off
+|╬| Auto join:on/off
+|╬| Auto leave:on/off
+|╬| Auto like:on/off
+|╬| Like friend:on/off
+|╬| Welcome message:on/off
+|╬| Auto notice:on/off
+|╬| Blockinvite:on/off
+|╬| Auto blockqr:on/off
+|╬| Namelock:on/off
+|╬| Auto add:on/off
+|╬| Check message
+|╬| Add message:
+|╬| Comment:on/off
+|╬| Add comment:
+|╬| Check comment
+|╬| Backup:on/off
+|╬| Gcancel:
+|╬| Update welcome:
+|╬| Check welcome message
+═╬════════►
+   🚮M̸͟͞O̸͟͞D̸͟͞E̸͟͞ C̸͟͞A̸͟͞N̸͟͞C̸͟͞E̸͟͞L̸͟͞🚮
+═╬════════►
+|╬| Rejectall
+|╬| Clean invites
+|╬| Clear invites
+═╬════════►
+   S̸͟͞U̸͟͞R̸͟͞P̸͟͞R̸͟͞I̸͟͞S̸͟͞E̸͟͞ G̸͟͞I̸͟͞F̸͟͞T̸͟͞
+═╬════════►
+|╬| gift1-15
+|╬| Spam gift
+|╬| Gift @
+═╬════════►
+   📲N̸͟͞O̸͟͞T̸͟͞I̸͟͞F̸͟͞I̸͟͞C̸͟͞A̸͟͞T̸͟͞I̸͟͞O̸͟͞N̸͟͞ 📲
+═╬════════►
+|╬| Group list
+|╬| Banlist
+|╬| Admin list
+|╬| Settings
+|╬| Ginfo
+|╬| TL:[text]
+|╬| Miclist
+|╬| Micdel          @
+|╬| Micadd          @
+═╬════════►
+   🚮W̸͟͞T̸͟͞F̸͟͞ K̸͟͞I̸͟͞L̸͟͞L̸͟͞ Y̸͟͞O̸͟͞U̸͟͞🚮
+═╬════════►
+|╬| Cleanse
+|╬| Vkick @
+|╬| Nk [name]
+|╬| Kick:[mid]
+|╬| Purge
+═╬════════►
+   💻S̸͟͞P̸͟͞A̸͟͞M͞ S̸͟͞E̸͟͞R̸͟͞V̸͟͞E̸͟͞R̸͟͞💻
+═╬════════►
+|╬| Spamg[on/off]
+|╬| Spam add:
+|╬| Spam change:
+|╬| Spam start:[number]
+|╬| Spam @
+|╬| Say a̸͟͞a̸͟͞a̸͟͞
+|╬| Me
+|╬| Speed
+|╬| Debug speed
+|╬| My mid
+|╬| Gcreator
+|╬| Halo
+|╬| Bot contact
+|╬| Bot mid
+|╬| Creator
+|╬| System
+|╬| Iconfig
+|╬| Kernel
+|╬| Cpu
+|╬| Respon/sname
+|╬| Help
+|╬| Mc:[mid]
+|╬| runtim
+|╬| show offenders:on/off
+═╬════════►
+   💻U̸͟͞T̸͟͞I̸͟͞L̸͟͞I̸͟͞T̸͟͞Y̸͟͞💻
+═╬════════►
+|╬| Lurking
+|╬| Lurking result
+|╬| Link open
+|╬| Link close
+|╬| Gurl
+|╬| Remove chat
+|╬| Bot restart
+═╬════════►
+   💿S̸͟͞E̸͟͞A̸͟͞R̸͟͞C̸͟͞H̸͟͞ C̸͟͞H̸͟͞A̸͟͞T̸͟͞💿
+═╬════════►
+|╬| Lyric 
+|╬| Music 
+|╬| Wiki 
+|╬| Vidio 
+|╬| Youtube 
+|╬| Instagram 
+|╬| Translate-idn   [text]
+|╬| Translate-eng   [text]
+|╬| Translate-thai  [text]
+|╬| Translate-japan [text]
+|╬| Translate-arab  [text]
+|╬| Translate-korea [text]
+|╬| Translate-chin  [text]
+|╬| Vn-id           [text]
+|╬| Vn-en           [text]
+|╬| Vn-jp           [text]
+|╬| Kalender
+|╬| Vn     [Text]
+|╬| Cek zodiak [Tggl-bulan-tahun]
+|╬| Tag on/off
+|╬| Emoji [expression]
+|╬| Info @[name]
+|╬| Ping
+|╬| Time
+|╬| apakah
+|╬| kerang ajaib
+|╬| Sticker [expression]
+|╬| Mention all
+═╬════════►
+   📣B̸͟͞R̸͟͞O̸͟͞A̸͟͞D̸͟͞C̸͟͞A̸͟͞S̸͟͞T̸͟͞📣
+═╬════════►
+|╬| Pm cast   
+|╬| Broadcast 
+|╬| Spam @[name]
+═╬════════►
+   💻P̸͟͞o̸͟͞w̸͟͞e̸͟͞r̸͟͞💻
+═╬════════►
+🔘Turn off bots🔘
+●▬▬▬▬๑۩Special Thanks۩๑▬▬▬▬▬●
+P̸͟͞O̸͟͞W̸͟͞E̸͟͞R̸͟͞ B̸͟͞Y̸͟͞ T̸͟͞C̸͟͞R̸͟͞
+Edited̸͟͞ by A̸͟͞C̸͟͞I̸͟͞L̸͟͞A̸͟͞R̸͟͞D̸͟͞
+   ●▬▬▬▬๑۩FuckMyBot۩๑▬▬▬▬▬●
 
-􀔃􀅕red arrow right􏿿 Command Private
-[Admin add @] tambah admin
-[adminlist] list admin
-[Set group] Menggatur Privasi Grup
-[Banned @] Bann Target 
-[Unban @]  Unbann Target
-[Kill @] Kick Target Bann
-[Nk @]   Kick Target User
-[Invite mid] Invite Via Mid
-[Kick mid] Kick Via mid
-[Ayo masuk] Invite Semua Bot
-[_namabot join] Invite Bot
-[Bye _namabot]  Leave Bot
 """
+
+textspeech= """╔═════════════════
+║  			TEXT TO SPEECH
+╠═════════════════
+╠➩ 'af' : 'Afrikaans'
+╠➩ 'sq' : 'Albanian'
+╠➩ 'ar' : 'Arabic'
+╠➩ 'hy' : 'Armenian'
+╠➩ 'bn' : 'Bengali'
+╠➩ 'ca' : 'Catalan'
+╠➩ 'zh' : 'Chinese'
+╠➩ 'zhcn' : 'Chinese (Mandarin/China)'
+╠➩ 'zhtw' : 'Chinese (Mandarin/Taiwan)'
+╠➩ 'zhyue' : 'Chinese (Cantonese)'
+╠➩ 'hr' : 'Croatian'
+╠➩ 'cs' : 'Czech'
+╠➩ 'da' : 'Danish'
+╠➩ 'nl' : 'Dutch'
+╠➩ 'en' : 'English'
+╠➩ 'enau' : 'English (Australia)'
+╠➩ 'enuk' : 'English (United Kingdom)'
+╠➩ 'enus' : 'English (United States)'
+╠➩ 'eo' : 'Esperanto'
+╠➩ 'fi' : 'Finnish'
+╠➩ 'fr' : 'French'
+╠➩ 'de' : 'German'
+╠➩ 'el' : 'Greek'
+╠➩ 'hi' : 'Hindi'
+╠➩ 'hu' : 'Hungarian'
+╠➩ 'is' : 'Icelandic'
+╠➩ 'id' : 'Indonesian'
+╠➩ 'it' : 'Italian'
+╠➩ 'jp' : 'Japanese'
+╠➩ 'km' : 'Khmer (Cambodian)'
+╠➩ 'ko' : 'Korean'
+╠➩ 'la' : 'Latin'
+╠➩ 'lv' : 'Latvian'
+╠➩ 'mk' : 'Macedonian'
+╠➩ 'no' : 'Norwegian'
+╠➩ 'pl' : 'Polish'
+╠➩ 'pt' : 'Portuguese'
+╠➩ 'ro' : 'Romanian'
+╠➩ 'ru' : 'Russian'
+╠➩ 'sr' : 'Serbian'
+╠➩ 'si' : 'Sinhala'
+╠➩ 'sk' : 'Slovak'
+╠➩ 'es' : 'Spanish'
+╠➩ 'eses' : 'Spanish (Spain)'
+╠➩ 'esus' : 'Spanish (United States)'
+╠➩ 'sw' : 'Swahili'
+╠➩ 'sv' : 'Swedish'
+╠➩ 'ta' : 'Tamil'
+╠➩ 'th' : 'Thai'
+╠➩ 'tr' : 'Turkish'
+╠➩ 'uk' : 'Ukrainian'
+╠➩ 'vi' : 'Vietnamese'
+╠➩ 'cy' : 'Welsh'
+╚═════════════════
 
 Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 
@@ -115,6 +359,7 @@ wait = {
     "lang":"JP",
     "comment":"cie ngeadd yaa makasihh",
     "commentOn":True,
+    "welmsg":" Selamat Datang di ",
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
@@ -124,6 +369,8 @@ wait = {
     "wblacklist":False,
     "dblacklist":False,
     "Protectgr":False,
+    "likeOn":False,
+    "welcomemsg":True
     "Protectjoin":False,
     "Protectcancl":False,
     "protectionOn":True,
@@ -141,6 +388,204 @@ setTime = {}
 setTime = wait2['setTime']
 
 
+def upload_tempimage(client):
+     '''
+         Upload a picture of a kitten. We don't ship one, so get creative!
+     '''
+     config = {
+         'album': album,
+         'name':  'bot auto upload',
+         'title': 'bot auto upload',
+         'description': 'bot auto upload'
+     }
+
+     print("Uploading image... ")
+     image = client.upload_from_path(image_path, config=config, anon=False)
+     print("Done")
+     print()
+
+def restart_program():
+    python = sys.executable
+    os.execl(python, python, * sys.argv) 
+def waktu(secs):
+    mins, secs = divmod(secs,60)
+    hours, mins = divmod(mins,60)
+    return '%02d hour %02d minute %02d seconds' % (hours, mins, secs)
+
+def download_page(url):
+    version = (3,0)
+    cur_version = sys.version_info
+    if cur_version >= version:     #If the Current Version of Python is 3.0 or above
+        import urllib,request    #urllib library for Extracting web pages
+        try:
+            headers = {}
+            headers['User-Agent'] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+            req = urllib,request.Request(url, headers = headers)
+            resp = urllib,request.urlopen(req)
+            respData = str(resp.read())
+            return respData
+        except Exception as e:
+            print(str(e))
+    else:                        #If the Current Version of Python is 2.x
+        import urllib2
+        try:
+            headers = {}
+            headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
+            req = urllib2.Request(url, headers = headers)
+            response = urllib2.urlopen(req)
+            page = response.read()
+            return page
+        except:
+            return"Page Not found"
+
+#Finding 'Next Image' from the given raw page
+def _images_get_next_item(s):
+    start_line = s.find('rg_di')
+    if start_line == -1:    #If no links are found then give an error!
+        end_quote = 0
+        link = "no_links"
+        return link, end_quote
+    else:
+        start_line = s.find('"class="rg_meta"')
+        start_content = s.find('"ou"',start_line+90)
+        end_content = s.find(',"ow"',start_content-90)
+        content_raw = str(s[start_content+6:end_content-1])
+        return content_raw, end_content
+
+#Getting all links with the help of '_images_get_next_image'
+def _images_get_all_items(page):
+    items = []
+    while True:
+        item, end_content = _images_get_next_item(page)
+        if item == "no_links":
+            break
+        else:
+            items.append(item)      #Append all the links in the list named 'Links'
+            time.sleep(0.1)        #Timer could be used to slow down the request for image downloads
+            page = page[end_content:]
+    return items
+
+def upload_tempimage(client):
+    '''
+        Upload a picture of a kitten. We don't ship one, so get creative!
+    '''
+    config = {
+        'album': album,
+        'name':  'bot auto upload',
+        'title': 'bot auto upload',
+        'description': 'bot auto upload'
+    }
+
+    print("Uploading image... ")
+    image = client.upload_from_path(image_path, config=config, anon=False)
+    print("Done")
+    print()
+
+def summon(to, nama):
+    aa = ""
+    bb = ""
+    strt = int(14)
+    akh = int(14)
+    nm = nama
+    for mm in nm:
+      akh = akh + 2
+      aa += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(mm)+"},"""
+      strt = strt + 6
+      akh = akh + 4
+      bb += "\xe2\x95\xa0 @x \n"
+    aa = (aa[:int(len(aa)-1)])
+    msg = Message()
+    msg.to = to
+    msg.text = "\xe2\x95\x94\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\n"+bb+"\xe2\x95\x9a\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90"
+    msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
+    print "Mention"
+    try:
+       cl.sendMessage(msg)
+    except Exception as error:
+       print error
+
+def yt(query):
+    with requests.session() as s:
+         isi = []
+         if query == "":
+             query = "S1B tanysyz"   
+         s.headers['user-agent'] = 'Mozilla/5.0'
+         url    = 'http://www.youtube.com/results'
+         params = {'search_query': query}
+         r    = s.get(url, params=params)
+         soup = BeautifulSoup(r.content, 'html5lib')
+         for a in soup.select('.yt-lockup-title > a[title]'):
+            if '&list=' not in a['href']:
+                if 'watch?v' in a['href']:
+                    b = a['href'].replace('watch?v=', '')
+                    isi += ['youtu.be' + b]
+         return isi
+
+def sendMessage(to, text, contentMetadata={}, contentType=0):
+    mes = Message()
+    mes.to, mes.from_ = to, profile.mid
+    mes.text = text
+    mes.contentType, mes.contentMetadata = contentType, contentMetadata
+    if to not in messageReq:
+        messageReq[to] = -1
+    messageReq[to] += 1
+
+def sendMessage(self, messageObject):
+        return self.Talk.client.sendMessage(0,messageObject)
+
+def sendText(self, Tomid, text):
+        msg = Message()
+        msg.to = Tomid
+        msg.text = text
+
+        return self.Talk.client.sendMessage(0, msg)
+def sendImage(self, to_, path):
+        M = Message(to=to_,contentType = 1)
+        M.contentMetadata = None
+        M.contentPreview = None
+        M_id = self._client.sendMessage(M).id
+        files = {
+            'file': open(path, 'rb'),
+        }
+        params = {
+            'name': 'media',
+            'oid': M_id,
+            'size': len(open(path, 'rb').read()),
+            'type': 'image',
+            'ver': '1.0',
+        }
+        data = {
+            'params': json.dumps(params)
+        }
+        r = self._client.post_content('https://os.line.naver.jp/talk/m/upload.nhn', data=data, files=files)
+        if r.status_code != 201:
+            raise Exception('Upload image failure.')
+        #r.content
+        return True
+
+def sendImageWithURL(self, to_, url):
+      path = '%s/pythonLine-%i.data' % (tempfile.gettempdir(), randint(0, 9))
+      r = requests.get(url, stream=True)
+      if r.status_code == 200:
+         with open(path, 'w') as f:
+            shutil.copyfileobj(r.raw, f)
+      else:
+         raise Exception('Download image failure.')
+      try:
+         self.sendImage(to_, path)
+      except Exception as e:
+         raise e
+
+def sendText(self, Tomid, text):
+        msg = Message()
+        msg.to = Tomid
+        msg.text = text
+
+def sendMessage(self, messageObject):
+        return self.Talk.client.sendMessage(0,messageObject)
+
+def post_content(self, urls, data=None, files=None):
+        return self._session.post(urls, headers=self._headers, data=data, files=files)
 def sendMessage(to, text, contentMetadata={}, contentType=0):
     mes = Message()
     mes.to, mes.from_ = to, profile.mid
@@ -185,6 +630,30 @@ def bot(op):
                    random.choice(DEF).kickoutFromGroup(op.param1,[op.param2])
                    random.choice(DEF).updateGroup(G)
         #------Protect Group Kick finish-----#
+        if op.type == 19:
+            if op.param2 in Bots:
+                return
+            kk.sendText(op.param1,cl.getContact(op.param2).displayName + " Member Jones Ada yg nendang")
+            print "Anggota Grup Di Kick"
+		
+        if op.type == 15:
+            if op.param2 in Bots:
+                return
+            kk.sendText(op.param1, "Ciee Kakak Gabetah")
+            print "Anggota Keluar"
+        if op.type == 17:
+            if op.param3 in wait["blacklist"]:
+                if not op.param2 in Bots and admin: 
+                    random.choice(KAC).kickoutFromGroup(op.param1,[op.param3])
+                    cl.sendText(op.param1,"blacklist users are not allowed to sign in  -_-")
+                    c = Message(to=op.param1, from_=None, text=None, contentType=13)
+                    c.contentMetadata={'mid':op.param3}
+                    cl.sendMessage(c)
+        if op.type == 17:
+	   if wait["welcomemsg"] == True:
+              if op.param2 not in Bots:
+                 ginfo = cl.getGroup(op.param1)
+                 cl.sendText(op.param1,cl.getContact(op.param2).displayName + wait["welmsg"]+ str(ginfo.name))
 
         #------Cancel Invite User start------#
         if op.type == 13:
@@ -1556,6 +2025,10 @@ def bot(op):
                 else:md+=" Auto add : off\n"
                 if wait["commentOn"] == True: md+=" Comment : on\n"
                 else:md+=" Comment : off\n"
+		if wait["likeOn"] == True: md+="Auto like : on\n"
+                else:md+="Auto like : off\n
+                if wait["welcomemsg"] == True: md+="welcome message : on\n"
+                else:md+="welcome message : off\n"
                 cl.sendText(msg.to,md)
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
@@ -1796,7 +2269,520 @@ def bot(op):
                 else:
                     wait["clock"] = False
                     kc.sendText(msg.to,"Jam Sedang Off")
-         #-------------Fungsi Jam on/off Finish-------------------#           
+         #-------------Fungsi Jam on/off Finish-------------------#   
+            elif 'Bot mid' in msg.text.lower():
+               if msg.from_ in admin:
+			cl.sendText(msg.to,mid)
+			ki.sendText(msg.to,Amid)
+			kk.sendText(msg.to,Bmid)
+			kc.sendText(msg.to,Cmid)
+			ks.sendText(msg.to,Dmid)
+			kt.sendText(msg.to,Emid)
+ #=======================================================
+            elif "Vn-af " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-af ","")
+                 tts = gTTS(psn, lang='af', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-sq " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-sq ","")
+                 tts = gTTS(psn, lang='sq', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-ar " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-ar ","")
+                 tts = gTTS(psn, lang='ar', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-hy " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-hy ","")
+                 tts = gTTS(psn, lang='hy', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-bn " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-bn ","")
+                 tts = gTTS(psn, lang='bn', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-ca " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-ca ","")
+                 tts = gTTS(psn, lang='ca', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-zh " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-zh ","")
+                 tts = gTTS(psn, lang='zh', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-zhcn " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-zhcn ","")
+                 tts = gTTS(psn, lang='zh-cn', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-zhtw " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-zhtw ","")
+                 tts = gTTS(psn, lang='zh-tw', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-zhyue " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-zhyue ","")
+                 tts = gTTS(psn, lang='zh-yue', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-hr " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-hr ","")
+                 tts = gTTS(psn, lang='hr', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-cs " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-cs ","")
+                 tts = gTTS(psn, lang='cs', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-da " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-da ","")
+                 tts = gTTS(psn, lang='da', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-nl " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-nl ","")
+                 tts = gTTS(psn, lang='nl', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-en " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-en ","")
+                 tts = gTTS(psn, lang='en', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-enau " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-enau ","")
+                 tts = gTTS(psn, lang='en-au', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-enuk " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-enuk ","")
+                 tts = gTTS(psn, lang='en-uk', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-enus " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-enus ","")
+                 tts = gTTS(psn, lang='en-us', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-eo " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-eo ","")
+                 tts = gTTS(psn, lang='eo', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-fi " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-fi ","")
+                 tts = gTTS(psn, lang='fi', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-fr " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-fr ","")
+                 tts = gTTS(psn, lang='fr', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-de " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-de ","")
+                 tts = gTTS(psn, lang='de', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-el " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-el ","")
+                 tts = gTTS(psn, lang='el', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-hi " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-hi ","")
+                 tts = gTTS(psn, lang='hi', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-hu " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-hu ","")
+                 tts = gTTS(psn, lang='hu', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-is " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-is ","")
+                 tts = gTTS(psn, lang='is', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-id " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-id ","")
+                 tts = gTTS(psn, lang='id', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-it " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-it ","")
+                 tts = gTTS(psn, lang='it', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-jp " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-jp ","")
+                 tts = gTTS(psn, lang='ja', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-km " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-km ","")
+                 tts = gTTS(psn, lang='km', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-ko " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-ko ","")
+                 tts = gTTS(psn, lang='ko', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-la " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-la ","")
+                 tts = gTTS(psn, lang='la', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-lv " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-lv ","")
+                 tts = gTTS(psn, lang='lv', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-mk " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-mk ","")
+                 tts = gTTS(psn, lang='mk', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-no " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-no ","")
+                 tts = gTTS(psn, lang='no', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-pl " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-pl ","")
+                 tts = gTTS(psn, lang='pl', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-pt " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-pt ","")
+                 tts = gTTS(psn, lang='pt', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-ro " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-ro ","")
+                 tts = gTTS(psn, lang='ro', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-ru " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-ru ","")
+                 tts = gTTS(psn, lang='ru', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-sr " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-sr ","")
+                 tts = gTTS(psn, lang='sr', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-si " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-si ","")
+                 tts = gTTS(psn, lang='si', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-sk " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-sk ","")
+                 tts = gTTS(psn, lang='sk', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-es " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-es ","")
+                 tts = gTTS(psn, lang='es', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-eses " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-eses ","")
+                 tts = gTTS(psn, lang='es-es', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-esus " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-esus ","")
+                 tts = gTTS(psn, lang='es-us', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-sw " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-sv ","")
+                 tts = gTTS(psn, lang='sv', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-ta " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-ta ","")
+                 tts = gTTS(psn, lang='ta', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-th " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-th ","")
+                 tts = gTTS(psn, lang='th', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-tr " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-tr ","")
+                 tts = gTTS(psn, lang='tr', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-uk " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-uk ","")
+                 tts = gTTS(psn, lang='uk', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-vi " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-vi ","")
+                 tts = gTTS(psn, lang='vi', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+            elif "Vn-cy " in msg.text:
+              if msg.from_ in admin:
+                 psn = msg.text.replace("Vn-cy ","")
+                 tts = gTTS(psn, lang='cy', slow=False)
+                 tts.save('tts.mp3')
+                 cl.sendAudio(msg.to, 'tts.mp3')
+ #=======================================================
+            elif msg.text in ["Myname"]:
+                h = cl.getContact(mid)
+                cl.sendText(msg.to,"===[DisplayName]===\n" + h.displayName)
+            elif msg.text in ["Mybio"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"===[StatusMessage]===\n" + h.statusMessage)
+            elif msg.text in ["Mypict"]:
+                    h = cl.getContact(mid)
+                    cl.sendImageWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["Myvid"]:
+                    h = cl.getContact(mid)
+                    cl.sendVideoWithURL(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["Urlpict"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["Mycover"]:
+                    h = cl.getContact(mid)
+                    cu = cl.channel.getCover(mid)          
+                    path = str(cu)
+                    cl.sendImageWithURL(msg.to, path)
+            elif msg.text in ["Urlcover"]:
+                    h = cl.getContact(mid)
+                    cu = cl.channel.getCover(mid)          
+                    path = str(cu)
+                    cl.sendText(msg.to, path)
+ #=======================================================
+            elif "Translate-arab " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-arab ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'ar')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+            elif "Translate-korea " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-korea ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'ko')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+            elif "Translate-chin " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-chin ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'zh-cn')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+	    elif "Translate-japan " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-japan ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'ja')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+   	    elif "Translate-thai " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-thai ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'th')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+            elif "Translate-idn " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-idn ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'id')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+
+            elif "Translate-eng " in msg.text:
+              if msg.from_ in admin:
+                txt = msg.text.replace("Translate-eng ","")
+                try:
+                    translator = Translator()
+                    trs = translator.translate(txt,'en')
+                    A = trs.text
+                    A = A.encode('utf-8')
+                    cl.sendText(msg.to,A)
+                except:
+                      cl.sendText(msg.to,'Error.')
+
+            elif "Say " in msg.text:
+              if msg.from_ in  admin:
+				bctxt = msg.text.replace("Say ","")
+				cl.sendText(msg.to,(bctxt))
+				kk.sendText(msg.to,(bctxt))
+				kc.sendText(msg.to,(bctxt))
+				ki.sendText(msg.to,(bctxt))
+				ks.sendText(msg.to,(bctxt))
+				kt.sendText(msg.to,(bctxt))
+				
+##≠========================&=&==&=&=%=%=%=%==%=%=%=%;%;%;;%;;%;%
+            elif msg.text in ["Welcome message:on"]:
+              if msg.from_ in admin:
+                if wait["welcomemsg"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"welcome message on\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                    else:
+                        cl.sendText(msg.to,"welcome message on\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                else:
+                    wait["welcomemsg"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"welcome message on\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                    else:
+                        cl.sendText(msg.to,"welcome message on")
+            elif msg.text in ["Auto blockqr:on","auto blockqr:on"]:
+		
+            elif msg.text in ["Welcome message:off"]:
+              if msg.from_ in admin:
+                if wait["welcomemsg"] == False:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"welcome message off\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                    else:
+                        cl.sendText(msg.to,"welcome message off\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                else:
+                    wait["welcomemsg"] = False
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"welcome message off\n\n"+ datetime.today().strftime('%H:%M:%S'))
+                    else:
+                        cl.sendText(msg.to,"welcome message off\n\n"+ datetime.today().strftime('%H:%M:%S'))
+			
+            elif msg.text in ["Invite user"]:
+              if msg.from_ in admin:
+                 wait["winvite"] = True
+                 cl.sendText(msg.to,"send contact")
+#============================================================
+            elif "Steal mid" in msg.text:
+              if msg.from_ in admin:
+                key = eval(msg.contentMetadata["MENTION"])
+                key1 = key["MENTIONEES"][0]["M"]
+                cl.sendText(msg.to,"Mc: " + key1)
+            elif "Steal contact" in msg.text:
+              if msg.from_ in admin:
+                key = eval(msg.contentMetadata["MENTION"])
+                key1 = key["MENTIONEES"][0]["M"]                
+                mmid = cl.getContact(key1)
+                msg.contentType = 13
+                msg.contentMetadata = {"mid": key1}
+                cl.sendMessage(msg)
+            elif "Mc:" in msg.text:
+              if msg.from_ in admin:
+                mmid = msg.text.replace("Mc:","")
+                msg.contentType = 13
+                msg.contentMetadata = {"mid":mmid}
+                cl.sendMessage(msg)
+
+#===============================================================
+            
+            elif msg.text in ["Auto like:on"]:
+              if msg.from_ in admin:
+                if wait["likeOn"] == True:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Done。")
+                else:
+                    wait["likeOn"] = True
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Already。")
+            elif msg.text in ["Auto like:off"]:
+              if msg.from_ in admin:
+                if wait["likeOn"] == False:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Done。")
+                else:
+                    wait["likeOn"] = False
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Already。")
+#==========================================================
          
          #-------------Fungsi Change Clock Start------------------#
             elif msg.text in ["Change clock"]:
@@ -1807,6 +2793,95 @@ def bot(op):
                     wait["cName"] = n
                     cl.sendText(msg.to,"changed to\n\n" + n)
          #-------------Fungsi Change Clock Finish-----------------#  
+            elif "Steal group pict" in msg.text:
+              if msg.from_ in admin:
+					group = cl.getGroup(msg.to)
+					path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
+                                        cl.sendImageWithURL(msg.to,path)
+            elif "Turn off bots" in msg.text:
+               if msg.from_ in owner:
+                 try:
+                     import sys
+                     sys.exit()
+                 except:
+                     pass
+#==================================================================
+            elif "Steal bio" in msg.text:
+              if msg.from_ in admin:
+                key = eval(msg.contentMetadata["MENTION"])
+                key1 = key["MENTIONEES"][0]["M"]
+                contact = cl.getContact(key1)
+                cu = cl.channel.getCover(key1)
+                try:
+                    cl.sendText(msg.to,contact.statusMessage)
+                except:
+                    cl.sendText(msg.to,contact.statusMessage)
+            elif 'Creator' in msg.text.lower():
+              if msg.from_ in admin:
+				msg.contentType = 13
+				msg.contentMetadata = {'mid': mid}
+				cl.sendMessage(msg)
+				cl.sendText(msg.to,"My Creator ")
+            elif "Admin on @" in msg.text:
+                if msg.from_ in owner:
+                    print "[Command]Staff add executing"
+                    _name = msg.text.replace("Admin on @","")
+                    _nametarget = _name.rstrip(' ')
+                    gs = cl.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.append(target)
+                                cl.sendText(msg.to,"succes add to adminlist")
+                            except:
+                                pass
+                    print "[Command]Staff add executed"
+                else:
+                    cl.sendText(msg.to,"Command denied.")
+                    cl.sendText(msg.to,"owner permission required.")
+            elif msg.text.lower() == 'Admin list':
+              if msg.from_ in admin:
+                if admin == []:
+                       cl.sendText(msg.to,"The adminlist is empty")
+                else:
+                        cl.sendText(msg.to,"loading...")
+                        mc = ""
+                        gh = ""
+                        for mi_d in owner:
+                            mc += "->" +cl.getContact(mi_d).displayName + "\n"
+		        for mi_d in admin:
+			    gh += "->" +cl.getContact(mi_d).displayName + "\n"				
+                        cl.sendText(msg.to,"=======OWNER=======\n\n" + mc + "\n=======ADMIN=======\n\n" + gh +"\n=====================\n")
+                        print "[Command]Stafflist executed"
+            elif "Expel on @" in msg.text:
+                if msg.from_ in owner:
+                    print "[Command]Staff remove executing"
+                    _name = msg.text.replace("Expel on @","")
+                    _nametarget = _name.rstrip(' ')
+                    gs = cl.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.remove(target)
+                                cl.sendText(msg.to,"Succes remove admin from adminlist")
+                            except:
+                                pass
+                    print "[Command]Staff remove executed"
+                else:
+                    cl.sendText(msg.to,"Command denied.")
+                    cl.sendText(msg.to,"owner permission required.")
 #------------------------------- CHECK SIDER --------------------------------
             if msg.text.lower() in ["/set"]:
                 if msg.toType == 2:
@@ -1966,6 +3041,307 @@ def bot(op):
                   cl.updateGroup(G)
                   Ticket = cl.reissueGroupTicket(msg.to)
     #----------------------Fungsi Join Group Finish---------------#
+#========================================
+            elif "Spam @" in msg.text:
+                _name = msg.text.replace("pam @","")
+                _nametarget = _name.rstrip(' ')
+                gs = cl.getGroup(msg.to)
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                       cl.sendText(g.mid,"Spammed")
+                       ki.sendText(g.mid,"Spammed")
+                       kc.sendText(g.mid,"Spammed")
+                       ks.sendText(g.mid,"Spammed")
+                       kk.sendText(g.mid,"Spammed")
+                       kt.sendText(g.mid,"Spammed")
+                       ct.sendText(msg.to,"done spam bossque")
+            elif msg.text.lower() == 'responsename':
+              if msg.from_ in admin:
+                profile = cl.getProfile()
+                text = profile.displayName + ""
+                cl.sendText(msg.to, text)
+                profile = ki.getProfile()
+                text = profile.displayName + ""
+                kc.sendText(msg.to, text)
+                profile = kk.getProfile()
+                text = profile.displayName + ""
+                kb.sendText(msg.to, text)
+                profile = kc.getProfile()
+                text = profile.displayName + ""
+                ke.sendText(msg.to, text)
+                profile = ks.getProfile()
+                text = profile.displayName + ""
+	
+            elif msg.text in ["Sayang!"]:
+                print "EXCUTED -- ABSEN BOT"
+                cl.sendText(msg.to,"bebih")
+                ki.sendText(msg.to,"Hadir")
+                kk.sendText(msg.to,"Sayang")
+                kc.sendText(msg.to,"Micuuuuu")
+                ks.sendText(msg.to,"Aku cinta")
+	   	kt.sendText(msg.to,"😗😗😗😗😗😗")
+		
+            elif "Steal cover @" in msg.text:
+              if msg.from_ in admin:            
+                print "[Command]dp executing"
+                _name = msg.text.replace("Steal cover @","")
+                _nametarget = _name.rstrip('  ')
+                gs = cl.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:
+                    cl.sendText(msg.to,"Contact not found")
+                else:
+                    for target in targets:
+                        try:
+                            contact = cl.getContact(target)
+                            cu = cl.channel.getCover(target)
+                            path = str(cu)
+                            cl.sendImageWithURL(msg.to, path)
+                        except:
+                            pass
+                print "[Command]dp executed"
+            elif "Midpict:" in msg.text:
+              if msg.from_ in admin:
+                umid = msg.text.replace("Midpict:","")
+                contact = cl.getContact(umid)
+                try:
+                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                except:
+                    image = "https://www.1and1.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/not-found-t.jpg"
+                try:
+                    cl.sendImageWithURL(msg.to,image)
+                except Exception as error:
+                    cl.sendText(msg.to,(error))
+                    pass
+            elif "Steal pict " in msg.text:
+              if msg.from_ in admin:
+                if msg.toType == 2:
+                    msg.contentType = 0
+                    steal0 = msg.text.replace("Steal pict ","")
+                    steal1 = steal0.lstrip()
+                    steal2 = steal1.replace("@","")
+                    steal3 = steal2.rstrip()
+                    _name = steal3
+                    group = cl.getGroup(msg.to)
+                    targets = []
+                    for g in group.members:
+                        if _name == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"not found")
+                    else:
+                        for target in targets:
+                            try:
+                                contact = cl.getContact(target)
+                                try:
+                                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                                except:
+                                    image = "https://www.1and1.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/not-found-t.jpg"
+                                try:
+                                    cl.sendImageWithURL(msg.to,image)
+                                except Exception as error:
+                                    cl.sendText(msg.to,(error))
+                                    pass
+                            except:
+                                cl.sendText(msg.to,"Error!")
+                                break
+                else:
+                    cl.sendText(msg.to,"Tidak bisa dilakukan di luar grup")
+            elif "Pict group " in msg.text: 
+                saya = msg.text.replace('Pict group ','')
+                gid = cl.getGroupIdsJoined()
+                for i in gid: 
+                    h = cl.getGroup(i).name
+                    gna = cl.getGroup(i)
+                    if h == saya:
+                       cl.sendImageWithURL(msg.to,"http://dl.profile.line.naver.jp/"+ gna.pictureStatus)
+            elif msg.text in ["My name"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"===[DisplayName]===\n" + h.displayName)
+            elif msg.text in ["My bio"]:
+                    h = cl.getContact(mid)
+                    cl.sendText(msg.to,"===[StatusMessage]===\n" + h.statusMessage)
+            elif msg.text in ["My pict"]:
+                    h = cl.getContact(mid)
+                    cl.sendImageWithUrl(msg.to,"http://dl.profile.line-cdn.net/" + h.pictureStatus)
+            elif msg.text in ["My cover"]:
+                    h = cl.getContact(mid)
+                    cu = cl.channel.getCover(mid)
+                    path = str(cu)
+                    cl.sendImageWithUrl(msg.to, path)
+	    elif "Pap set:" in msg.text:
+                wait["Pap"] = msg.text.replace("Pap set:","")
+                cl.sendText(msg.to,"Pap Has Ben Set To")
+            elif msg.text in [".Pap","Pap"]:
+                cl.sendImageWithURL(msg.to,wait["Pap"]
+				    
+	    elif "Vn" in msg.text:
+                say = msg.text.replace("Vn","")
+                lang = 'id'
+                tts = gTTS(text=say, lang=lang)
+                tts.save("hasil.mp3")
+                cl.sendAudio(msg.to,"hasil.mp3")
+	    elif msg.text in ["Kalender","/waktu"]:
+                timeNow = datetime.now()
+                timeHours = datetime.strftime(timeNow,"(%H:%M)")
+                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
+                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
+                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
+                inihari = datetime.today()
+                hr = inihari.strftime('%A')
+                bln = inihari.strftime('%m')
+                for i in range(len(day)):
+                    if hr == day[i]: hasil = hari[i]
+                for k in range(0, len(bulan)):
+                    if bln == str(k): blan = bulan[k-1]
+                rst = hasil + ", " + inihari.strftime('%d') + " - " + blan + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M:%S') + " ]"
+                cl.sendText(msg.to, rst)
+            elif "Creat group" in msg.text:
+                thisgroup = cl.getGroups([msg.to])
+                Mids = [contact.mid for contact in thisgroup[0].members] 
+                mi_d = Mids[:33]
+                cl.createGroup("New", mi_d)
+                cl.sendText(msg.to,"Succes creat new group")
+            elif msg.text in ["Like:friend", "Bot like temen"]:
+                print "[Command]Like executed"
+                cl.sendText(msg.to,"pertamax")
+                try:
+                  likefriend()
+                except:
+                  pass
+
+	    elif "Cek zodiak " in msg.text:
+                tanggal = msg.text.replace("Cek zodiak ","")
+                r=requests.get('https://script.google.com/ macros/exec?service=AKfycbw7gKzP-WYV 2F5mc9RaR7yE3Ve1yN91Tjs91hp_jHSE02dSv9w&nama=ervan&tanggal='+tanggal)
+                data=r.text
+                data=json.loads(data)
+                lahir = data["data"]["lahir"]
+                usia = data["data"]["usia"]
+                ultah = data["data"]["ultah"]
+                zodiak = data["data"]["zodiak"]
+                cl.sendText(msg.to,"Tanggal Lahir: "+lahir+"\n\nUsia:"+usia+"\n\nUltah: "+ultah+"\n\nZodiak: "+zodiak)
+            elif "Steal " in msg.text:
+                if msg.from_ in admin:
+                    salsa = msg.text.replace("Steal ","")
+                    Manis = cl.getContact(salsa)
+                    Imoet = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                    try:
+                        cover = cl.channel.getCover(Manis)
+                    except:
+                        cover = ""
+                    cl.sendText(msg.to,"Gambar Foto Profilenya")
+                    cl.sendImageWithURL(msg.to,Imoet)
+                    if cover == "":
+                        cl.sendText(msg.to,"User tidak memiliki cover atau sejenisnya")
+                    else:
+                        cl.sendText(msg.to,"Gambar Covernya")
+                        cl.sendImageWithURL(msg.to,cover)
+				    
+            elif "Spam change:" in msg.text:
+              if msg.from_ in admin:
+                wait["spam"] = msg.text.replace("Spam change:","")
+                cl.sendText(msg.to,"spam changed")
+
+            elif "Spam add:" in msg.text:
+              if msg.from_ in admin:
+                wait["spam"] = msg.text.replace("Spam add:","")
+                if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"spam changed")
+                else:
+                    cl.sendText(msg.to,"Done")
+
+            elif "Spam:" in msg.text:
+              if msg.from_ in admin:
+                strnum = msg.text.replace("Spam:","")
+                num = int(strnum)
+                for var in range(0,num):
+                    cl.sendText(msg.to, wait["spam"])
+				   
+            elif 'Apakah' in msg.text.lower():
+              if msg.from_ in admin:
+                tanya = msg.text.lower().replace("apakah","")
+                jawab = ("Ya","Tidak","Mungkin","Bisa jadi")
+                jawaban = random.choice(jawab)
+                cl.sendText(msg.to,jawaban)
+				    
+            elif "Spamg " in msg.text:
+                if msg.from_ in admin:
+                   txt = msg.text.split(" ")
+                   jmlh = int(txt[2])
+                   teks = msg.text.replace("Spamg "+str(txt[1])+" "+str(jmlh)+ " ","")
+                   tulisan = jmlh * (teks+"\n")
+                   #Keke cantik <3
+                   if txt[1] == "on":
+                        if jmlh <= 10000:
+                             for x in range(jmlh):
+                                   cl.sendText(msg.to, teks)
+                        else:
+                               cl.sendText(msg.to, "Out of range! ")
+                   elif txt[1] == "off":
+                         if jmlh <= 10000:
+                               cl.sendText(msg.to, tulisan)
+                         else:
+                               cl.sendText(msg.to, "Out of range! ")
+				    
+#==========================================
+            elif "Youtube " in msg.text.lower():
+                if msg.from_ in admin:
+                   query = msg.text.split(" ")
+                   try:
+                       if len(query) == 3:
+                           isi = yt(query[2])
+                           hasil = isi[int(query[1])-1]
+                           cl.sendText(msg.to, hasil)
+                       else:
+                           isi = yt(query[1])
+                           cl.sendText(msg.to, isi[0])
+                   except Exception as e:
+                       cl.sendText(msg.to, str(e))
+            elif 'Vidio ' in msg.text:
+	      if msg.from_ in admin:
+                try:
+                    textToSearch = (msg.text).replace('Vidio ', "").strip()
+                    query = urllib.quote(textToSearch)
+                    url = "https://www.youtube.com/results?search_query=" + query
+                    response = urllib2.urlopen(url)
+                    html = response.read()
+                    soup = BeautifulSoup(html, "html.parser")
+                    results = soup.find(attrs={'class':'yt-uix-tile-link'})
+                    ght=('https://www.youtube.com' + results['href'])
+		    cl.sendVideoWithURL(msg.to,ght)
+                except:
+                    cl.sendText(msg.to,"Could not find it")
+				    
+            elif ("Ban repeat " in msg.text):
+              if msg.from_ in admin:
+                key = eval(msg.contentMetadata["MENTION"])
+                key["MENTIONEES"][0]["M"]
+                targets = []
+                for x in key["MENTIONEES"]:
+                    targets.append(x["M"])
+                for target in targets:
+                   try:
+                      wait["blacklist"][target] = True
+                      f=codecs.open('st2__b.json','w','utf-8')
+                      json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+                      cl.sendText(msg.to,"Succes Banned ")
+                   except:
+                      pass
+
+#========================================
+            elif "Update welcome:" in msg.text:
+              if msg.from_ in admin:
+                wait["welmsg"] = msg.text.replace("Update welcome:","")
+                cl.sendText(msg.to,"update welcome message succes"+ datetime.today().strftime('%H:%M:%S'))
+            elif msg.text in ["Check welcome message"]:
+              if msg.from_ in admin:
+                if wait["lang"] == "JP":
+                    cl.sendText(msg.to,"yor bot message\n\n" + wait["welmsg"])
+                else:
+                    cl.sendText(msg.to,"The automatic appending information is set as follows。\n\n" + wait["welmsg"])
 
     #-------------Fungsi Leave Group Start---------------#
             elif msg.text in ["Bye all","Bye sayang"]:
@@ -2027,7 +3403,84 @@ def bot(op):
                     except:
                         pass
     #-------------Fungsi Leave Group Finish---------------#
-    
+                elif "Gift @" in msg.text:
+                _name = msg.text.replace("Gift @","")
+                _nametarget = _name.rstrip(' ')
+                gs = cl.getGroup(msg.to)
+                for g in gs.members: 
+                    if _nametarget == g.displayName:
+                        msg.contentType = 9
+                        msg.contentMetadata={'PRDID': '89131c1a-e549-4bd5-9e60-e24de0d2e252',
+                                    'PRDTYPE': 'THEME', 'MSGTPL': '10'}
+                        msg.text = None
+                        cl.dendMessage(msg,g)
+
+#==================================================
+            elif "All rename:" in msg.text:
+              if msg.from_ in creator:
+                string = msg.text.replace("All rename:","")
+                if len(string.decode('utf-8')) <= 20:
+                    profile = cl.getProfile()
+                    profile.displayName = string
+                    cl.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 20:
+                    profile = ki.getProfile()
+                    profile.displayName = string
+                    ki.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 20:
+                    profile = kc.getProfile()
+                    profile.displayName = string
+                    kc.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 20:
+                    profile = kk.getProfile()
+                    profile.displayName = string
+                    kk.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 20:
+                    profile = ks.getProfile()
+                    profile.displayName = string
+                    ks.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 20:
+                    profile = kt.getProfile()
+                    profile.displayName = string
+                    kt.updateProfile(profile)
+                    cl.sendText(msg.to,"change name: "+string+"\nsucces")
+            elif msg.text.lower() == 'allbio:':
+              if msg.from_ in creator:
+                string = msg.text.lower().replace("allbio:","")
+                if len(string.decode('utf-8')) <= 500:
+                    profile = ki.getProfile()
+                    profile.statusMessage = string
+                    ki.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 500:
+                    profile = kk.getProfile()
+                    profile.statusMessage = string
+                    kk.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 500:
+                    profile = kc.getProfile()
+                    profile.statusMessage = string
+                    kc.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 500:
+                    profile = cl.getProfile()
+                    profile.statusMessage = string
+                    cl.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 500:
+                    profile = ks.getProfile()
+                    profile.statusMessage = string
+                    ks.updateProfile(profile)
+                if len(string.decode('utf-8')) <= 500:
+                    profile = kt.getProfile()
+                    profile.statusMessage = string
+                    kt.updateProfile(profile)
+                    cl.sendText(msg.to,"successfully turn it into: " + string + "")
+            elif "My name:" in msg.text:
+              if msg.from_ in creator:
+                string = msg.text.replace("My name:","")
+                if len(string.decode('utf-8')) <= 20:
+                    profile = cl.getProfile()
+                    profile.displayName = string
+                    cl.updateProfile(profile)
+                    cl.sendText(msg.to,"change name: "+string+"\nsucces")
+
     #-------------Fungsi Tag All Start---------------#
             elif msg.text in ["kiwkiw","Tagall","Kuchiyose no jutsu","Summon all member"]:
                   group = cl.getGroup(msg.to)
@@ -2159,7 +3612,157 @@ def bot(op):
                                     k3.sendText(msg.to,"Succes Cv")
                                 except:
                                     ki.sendText(msg.to,"error")
-            
+----------------------#  
+            elif 'Lyric ' in msg.text.lower():
+              if msg.from_ in admin:
+                try:
+                    songname = msg.text.lower().replace('lyric ','')
+                    params = {'songname': songname}
+                    r = requests.get('http://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
+                    data = r.text
+                    data = json.loads(data)
+                    for song in data:
+                        hasil = 'Lyric Lagu ('
+                        hasil += song[0]
+                        hasil += ')\n\n'
+                        hasil += song[5]
+                        cl.sendText(msg.to, hasil)
+                except Exception as wak:
+                        cl.sendText(msg.to, str(wak))
+            elif 'Wiki ' in msg.text.lower():
+              if msg.from_ in admin:
+                  try:
+                      wiki = msg.text.lower().replace("wiki ","")
+                      wikipedia.set_lang("id")
+                      pesan="Title ("
+                      pesan+=wikipedia.page(wiki).title
+                      pesan+=")\n\n"
+                      pesan+=wikipedia.summary(wiki, sentences=1)
+                      pesan+="\n"
+                      pesan+=wikipedia.page(wiki).url
+                      cl.sendText(msg.to, pesan)
+                  except:
+                          try:
+                              pesan="Over Text Limit! Please Click link\n"
+                              pesan+=wikipedia.page(wiki).url
+                              cl.sendText(msg.to, pesan)
+                          except Exception as e:
+                              cl.sendText(msg.to, str(e))
+            elif msg.text.lower() == 'bot restart':
+              if msg.from_ in admin:
+                    print "[Command]Like executed"
+                    try:
+                        cl.sendText(msg.to,"Restarting...")
+                        restart_program()
+                    except:
+                        cl.sendText(msg.to,"Please wait")
+                        restart_program()
+                        pass
+            elif msg.text.lower() == 'ifconfig':
+              if msg.from_ in admin:
+                    botKernel = subprocess.Popen(["ifconfig"], stdout=subprocess.PIPE).communicate()[0]
+                    cl.sendText(msg.to, botKernel + "\n\n===SERVER INFO NetStat===")
+            elif msg.text.lower() == 'system':
+              if msg.from_ in admin:
+                    botKernel = subprocess.Popen(["df","-h"], stdout=subprocess.PIPE).communicate()[0]
+                    cl.sendText(msg.to, botKernel + "\n\n===SERVER INFO SYSTEM===")
+            elif msg.text.lower() == 'kernel':
+              if msg.from_ in admin:
+                    botKernel = subprocess.Popen(["uname","-srvmpio"], stdout=subprocess.PIPE).communicate()[0]
+                    cl.sendText(msg.to, botKernel + "\n\n===SERVER INFO KERNEL===")
+            elif msg.text.lower() == 'cpu':
+              if msg.from_ in admin:
+                    botKernel = subprocess.Popen(["cat","/proc/cpuinfo"], stdout=subprocess.PIPE).communicate()[0]
+                    cl.sendText(msg.to, botKernel + "\n\n===SERVER INFO CPU===")
+            elif msg.text.lower() == 'runtime':
+              if msg.from_ in admin:
+                eltime = time.time()
+                van = "Bot has been running for "+waktu(eltime)
+                cl.sendText(msg.to,van)
+
+            elif 'Music ' in msg.text.lower():
+                try:
+                    songname = msg.text.lower().replace('music ','')
+                    params = {'songname': songname}
+                    r = requests.get('http://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
+                    data = r.text
+                    data = json.loads(data) 
+                    for song in data:
+                        hasil = 'This is Your Music\n'
+                        hasil += 'Judul : ' + song[0]
+                        hasil += '\nDurasi : ' + song[1] 
+                        hasil += '\nLink Download : ' + song[4] 
+                        cl.sendText(msg.to, hasil)
+                        cl.sendText(msg.to, "Please Wait for audio...")
+                        cl.sendAudioWithURL(msg.to, song[4])
+                except Exception as njer:
+                        cl.sendText(msg.to, str(njer))
+            elif 'Instagram ' in msg.text.lower():
+                    try:
+                    	instagram = msg.text.replace("instagram ","")
+                        response = requests.get("https://www.instagram.com/"+instagram+"?__a=1")
+                        data = response.json()
+                        namaIG = str(data['user']['full_name'])
+                        bioIG = str(data['user']['biography'])
+                        mediaIG = str(data['user']['media']['count'])
+                        verifIG = str(data['user']['is_verified'])
+                        usernameIG = str(data['user']['username'])
+                        followerIG = str(data['user']['followed_by']['count'])
+                        profileIG = data['user']['profile_pic_url_hd']
+                        privateIG = str(data['user']['is_private'])
+                        followIG = str(data['user']['follows']['count'])
+                        link = "Link: " + "https://www.instagram.com/" + instagram
+                    	detail = "========INSTAGRAM INFO USER========\n"
+                    	details = "\n========INSTAGRAM INFO USER========"
+                        text = detail + "Name : "+namaIG+"\nUsername : "+usernameIG+"\nBiography : "+bioIG+"\nFollower : "+followerIG+"\nFollowing : "+followIG+"\nPost : "+mediaIG+"\nVerified : "+verifIG+"\nPrivate : "+privateIG+"" "\n" + link + details
+                        cl.sendImageWithURL(msg.to, profileIG)
+                        cl.sendText(msg.to, str(text))
+                    except Exception as e:
+                        cl.sendText(msg.to, str(e))
+            	        cl.sendText(msg.to,"Follow Fast Follback")
+            elif "Image " in msg.text:
+                search = msg.text.replace("Image ","")
+                url = 'https://www.google.com/search?espv=2&biw=1366&bih=667&tbm=isch&oq=kuc&aqs=mobile-gws-lite.0.0l5&q=' + search
+                raw_html = (download_page(url))
+                items = []
+                items = items + (_images_get_all_items(raw_html))
+                path = random.choice(items)
+                print path
+                try:
+                    cl.sendImageWithURL(msg.to,path)
+                except:
+                    pass           
+
+            elif "Id@en" in msg.text:
+                bahasa_awal = 'id'
+                bahasa_tujuan = 'en'
+                kata = msg.text.replace("Id@en ","")
+                url = 'https://translate.google.com/m?sl=%s&tl=%s&ie=UTF-8&prev=_m&q=%s' % (bahasa_awal, bahasa_tujuan, kata.replace(" ", "+"))
+                agent = {'User-Agent':'Mozilla/5.0'}
+                cari_hasil = 'class="t0">'
+                request = urllib2.Request(url, headers=agent)
+                page = urllib2.urlopen(request).read()
+                result = page[page.find(cari_hasil)+len(cari_hasil):]
+                result = result.split("<")[0]
+                cl.sendText(msg.to,"════FROM ID════\n" + "" + kata + "\n════TO ENGLISH════\n" + "" + result + "\n══════SUKSES═════")
+
+            elif 'clean invites' in msg.text.lower():
+               if msg.from_ in admin:
+                if msg.toType == 2:
+                    X = cl.getGroup(msg.to)
+                    if X.invitee is not None:
+                        gInviMids = [contact.mid for contact in X.invitee]
+                        random.choice(KAC).cancelGroupInvitation(msg.to, gInviMids)
+                    else:
+                        if wait["lang"] == "JP":
+                            cl.sendText(msg.to,"No one is inviting。")
+                        else:
+                            cl.sendText(msg.to,"Sorry, nobody absent")
+                else:
+                    if wait["lang"] == "JP":
+                        cl.sendText(msg.to,"Can not be used outside the group")
+                    else:
+                        cl.sendText(msg.to,"Not for use less than group")
             #----------------Fungsi Banned User Target Start-----------------------#
             elif "Banned @" in msg.text:
               if msg.from_ in admin:
